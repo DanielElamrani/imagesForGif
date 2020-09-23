@@ -1,0 +1,1023 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2020.09.23 14:39:36 =~=~=~=~=~=~=~=~=~=~=~=
+login as: delamran
+Pre-authentication banner message from server:
+| Access to Brooklyn College computers is restricted to authorized users
+|         and approved educational and research purposes, only.
+End of banner message from server
+delamran@146.245.252.28's password: 
+Last login: Wed Sep 23 14:26:10 2020 from ool-45700017.dyn.optonline.net
+]0;delamran@sol28:~[?1034h[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m  log  [01;34mMyCalendars[0m  [01;32mmyscript.exe[0m  [01;34mpublic_html[0m
+]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m  log  [01;34mMyCalendars[0m  [01;32mmyscript.exe[0m  [01;34mpublic_html[0m
+]0;delamran@sol28:~[delamran@sol28 ~]$ w-get[K[K[K[Kget https://raw.githubusercontent.com/DanielElamrani/Assign ment2--3130/master/regional-us-weekly-2-07-2-14.csv
+--2020-09-23 14:45:50--  https://raw.githubusercontent.com/DanielElamrani/Assignment2--3130/master/regional-us-weekly-2-07-2-14.csv
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 199.232.36.133
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|199.232.36.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 19125 (19K) [text/plain]
+Saving to: ‘regional-us-weekly-2-07-2-14.csv’
+
+ 0% [                                       ] 0           --.-K/s              100%[======================================>] 19,125      --.-K/s   in 0s      
+
+2020-09-23 14:45:56 (62.3 MB/s) - ‘regional-us-weekly-2-07-2-14.csv’ saved [19125/19125]
+
+]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mMyCalendars[0m   [01;34mpublic_html[0m
+log      [01;32mmyscript.exe[0m  regional-us-weekly-2-07-2-14.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ mv regional-us-weekly-2-07-2-14.csv songs.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m  log  [01;34mMyCalendars[0m  [01;32mmyscript.exe[0m  [01;34mpublic_html[0m  songs.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ head -n 10 songs.csv
+1,The Box,Roddy Ricch,18883695,https://open.spotify.com/track/0nbXyq5TXYPCO7pr3N8S4I
+2,Life Is Good (feat. Drake),Future,11725270,https://open.spotify.com/track/5yY9lUy8nbvjM1Uyo1Uqoc
+3,Intentions,Justin Bieber,9044309,https://open.spotify.com/track/364dI1bYnvamSnBJ8JcNzN
+4,ROXANNE,Arizona Zervas,7884837,https://open.spotify.com/track/696DnlkuDOXcMAnKlTgXXK
+5,High Fashion (feat. Mustard),Roddy Ricch,7616758,https://open.spotify.com/track/07KXEDMj78x68D884wgVEm
+6,Blinding Lights,The Weeknd,7451597,https://open.spotify.com/track/0sf12qNH5qcw8qpgymFOqD
+7,Godzilla (feat. Juice WRLD),Eminem,7235132,https://open.spotify.com/track/7FIWs0pqAYbP91WWM0vlTQ
+8,Falling,Trevor Daniel,7079662,https://open.spotify.com/track/4TnjEaWOeW0eKTKIEvJyCa
+9,Don't Start Now,Dua Lipa,6911464,https://open.spotify.com/track/6WrI0LAC5M1Rw2MnX2ZvEg
+10,Circles,Post Malone,6696187,https://open.spotify.com/track/21jGcNKet2qwijlDFuPiPb
+]0;delamran@sol28:~[delamran@sol28 ~]$ cut -d [K, f1 -- [Kcomplement songs.csv
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+]0;delamran@sol28:~[delamran@sol28 ~]$ cut -d, -f1 -- [Kcomplement songs.csv
+The Box,Roddy Ricch,18883695,https://open.spotify.com/track/0nbXyq5TXYPCO7pr3N8S4I
+Life Is Good (feat. Drake),Future,11725270,https://open.spotify.com/track/5yY9lUy8nbvjM1Uyo1Uqoc
+Intentions,Justin Bieber,9044309,https://open.spotify.com/track/364dI1bYnvamSnBJ8JcNzN
+ROXANNE,Arizona Zervas,7884837,https://open.spotify.com/track/696DnlkuDOXcMAnKlTgXXK
+High Fashion (feat. Mustard),Roddy Ricch,7616758,https://open.spotify.com/track/07KXEDMj78x68D884wgVEm
+Blinding Lights,The Weeknd,7451597,https://open.spotify.com/track/0sf12qNH5qcw8qpgymFOqD
+Godzilla (feat. Juice WRLD),Eminem,7235132,https://open.spotify.com/track/7FIWs0pqAYbP91WWM0vlTQ
+Falling,Trevor Daniel,7079662,https://open.spotify.com/track/4TnjEaWOeW0eKTKIEvJyCa
+Don't Start Now,Dua Lipa,6911464,https://open.spotify.com/track/6WrI0LAC5M1Rw2MnX2ZvEg
+Circles,Post Malone,6696187,https://open.spotify.com/track/21jGcNKet2qwijlDFuPiPb
+everything i wanted,Billie Eilish,6541461,https://open.spotify.com/track/3ZCTVFBt2Brf31RLEnCkWJ
+BOP,DaBaby,6301127,https://open.spotify.com/track/6Ozh9Ok6h4Oi1wUSLtBseN
+Dance Monkey,Tones and I,6209703,https://open.spotify.com/track/1rgnBhdG2JDFTbYkYRZAku
+Suicidal,YNW Melly,6176413,https://open.spotify.com/track/1iSqfoUFnQwV0QW1EfUit8
+Blueberry Faygo,Lil Mosey,5802868,https://open.spotify.com/track/6wJYhPfqk3KGhHRG76WzOh
+Run,Joji,5759082,https://open.spotify.com/track/6p8eEdiZLKJH8tcjGZuNTK
+Ballin' (with Roddy Ricch),Mustard,5519250,https://open.spotify.com/track/3QzAOrNlsabgbMwlZt7TAY
+Say So,Doja Cat,5143429,https://open.spotify.com/track/3Dv1eDb0MEgF93GpLXlucZ
+TOES (feat. Lil Baby & Moneybagg Yo),DaBaby,4913481,https://open.spotify.com/track/2FvD20Z8aoWIePi7PoN8sG
+Bandit (with YoungBoy Never Broke Again),Juice WRLD,4880472,https://open.spotify.com/track/6Gg1gjgKi2AK4e0qzsR7sd
+Adore You,Harry Styles,4800551,https://open.spotify.com/track/3jjujdWJ72nww5eGnfs2E7
+You should be sad,Halsey,4657358,https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK
+SUGAR,BROCKHAMPTON,4600863,https://open.spotify.com/track/6U0FIYXCQ3TGrk4tFpLrEA
+Yummy,Justin Bieber,4600350,https://open.spotify.com/track/41L3O37CECZt3N7ziG2z7l
+Woah,Lil Baby,4483207,https://open.spotify.com/track/598yNsG1JFrGd4n2kMoz7F
+WHATS POPPIN,Jack Harlow,4454303,https://open.spotify.com/track/3Q6F8RByyhRTJpRtZLY3cg
+OUT WEST (feat. Young Thug),JACKBOYS,4372723,https://open.spotify.com/track/6gi6y1xwmVszDWkUqab1qw
+Know Your Worth,Khalid,4329604,https://open.spotify.com/track/0TrPqhAMoaKUFLR7iYDokf
+My Oh My (feat. DaBaby),Camila Cabello,4323586,https://open.spotify.com/track/3yOlyBJuViE2YSGn3nVE1K
+Someone You Loved,Lewis Capaldi,4305603,https://open.spotify.com/track/7qEHsqek33rTcFNT9PFqLf
+Sunflower - Spider-Man: Into the Spider-Verse,Post Malone,4187496,https://open.spotify.com/track/0RiRZpuVRbi7oqRdSMwhQY
+Futsal Shuffle 2020,Lil Uzi Vert,4085926,https://open.spotify.com/track/2Ec33AVlkTTq8BHFgBTdQs
+hot girl bummer,blackbear,3897852,https://open.spotify.com/track/7aiClxsDWFRQ0Kzk5KI5ku
+Yikes,Nicki Minaj,3766495,https://open.spotify.com/track/75dLEqanQTupF3dtP9exT5
+HIGHEST IN THE ROOM,Travis Scott,3754045,https://open.spotify.com/track/3eekarcy7kvN4yt5ZFzltW
+bad guy,Billie Eilish,3721615,https://open.spotify.com/track/2Fxmhks0bxGSBdJ92vM42m
+What A Man Gotta Do,Jonas Brothers,3629494,https://open.spotify.com/track/4wNIkl5XGiAACjFBlDWuSd
+Good News,Mac Miller,3610046,https://open.spotify.com/track/1DWZUa5Mzf2BwzpHtgbHPY
+Lucid Dreams,Juice WRLD,3606874,https://open.spotify.com/track/285pBltuF7vW8TeWk8hdRR
+VIBEZ,DaBaby,3597119,https://open.spotify.com/track/0fySG6A6qLE8IvDpayb5bM
+No Idea,Don Toliver,3537878,https://open.spotify.com/track/3VyjsVV24RmBIbWJAeUJNu
+I Do It (ft. Big Sean Lil Baby),Lil Wayne,3531253,https://open.spotify.com/track/1bRO28yzxgO3y3UmNR29TZ
+Tusa,KAROL G,3519635,https://open.spotify.com/track/7k4t7uLgtOxPwTpFmtJNTY
+Robbery,Juice WRLD,3502402,https://open.spotify.com/track/6Hj9jySrnFppAI0sEMCZpJ
+Sum 2 Prove,Lil Baby,3375978,https://open.spotify.com/track/2u3EyuCqqV31woqGvO9LBz
+10000 Hours (with Justin Bieber),Dan + Shay,3331326,https://open.spotify.com/track/2wrJq5XKLnmhRXHIAf9xBa
+GOODMORNINGTOKYO!,TOKYO’S REVENGE,3315507,https://open.spotify.com/track/0Q2n5yzl2XRqYbV77tZNYp
+when the party's over,Billie Eilish,3227972,https://open.spotify.com/track/43zdsphuZLzwA9k4DJhU0I
+Memories,Maroon 5,3206783,https://open.spotify.com/track/2b8fOow8UzyDFAE27YhOZM
+Suge,DaBaby,3191234,https://open.spotify.com/track/2gwkD6igEhQbDQegRCcdoB
+Lose You To Love Me,Selena Gomez,3157654,https://open.spotify.com/track/4l0Mvzj72xxOpRrp6h8nHi
+Sunday Best,Surfaces,3061897,https://open.spotify.com/track/1Cv1YLb4q0RzL6pybtaMLo
+Broke In A Minute,Tory Lanez,3019824,https://open.spotify.com/track/2ZrAjMSmlbDIil0JaVgTHh
+Physical,Dua Lipa,2986777,https://open.spotify.com/track/5px6upUHM3fhOP621Edp4V
+Money In The Grave (Drake ft. Rick Ross),Drake,2979560,https://open.spotify.com/track/5ry2OE6R2zPQFDO85XkgRb
+Heartless,The Weeknd,2925214,https://open.spotify.com/track/57vxBYXtHMk6H1aD29V7PU
+ORANGE SODA,Baby Keem,2886758,https://open.spotify.com/track/5FkoSXiJPKTNyYgALRJFhD
+Before You Go,Lewis Capaldi,2886609,https://open.spotify.com/track/2gMXnyrvIjhVBUZwvLZDMP
+Ransom,Lil Tecca,2885563,https://open.spotify.com/track/1lOe9qE0vR9zwWQAOk6CoO
+Rare,Selena Gomez,2862506,https://open.spotify.com/track/7HMmFQsKsljwTw8bS7lu19
+No Shame,5 Seconds of Summer,2834457,https://open.spotify.com/track/5JSVa5i6lFPoyOzK4gj0Ox
+YELL OH,Trippie Redd,2804451,https://open.spotify.com/track/003VDDA7J3Xb2ZFlNx7nIZ
+Goodbyes (Feat. Young Thug),Post Malone,2776823,https://open.spotify.com/track/6vBdBCoOhKHiYDDOcorfNo
+223's (feat. 9lokknine),YNW Melly,2751597,https://open.spotify.com/track/29ZXwWOOLz9t5fa3eT3i7T
+Truth Hurts,Lizzo,2736739,https://open.spotify.com/track/3HWzoMvoF3TQfYg4UPszDq
+lovely (with Khalid),Billie Eilish,2732497,https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4
+MIDDLE CHILD,J. Cole,2727348,https://open.spotify.com/track/2JvzF1RMd7lE3KmFlsyZD8
+Hot (Remix) [feat. Gunna and Travis Scott],Young Thug,2727253,https://open.spotify.com/track/4ea9w8c4ROqiZpJVhfBA3m
+If The World Was Ending (feat. Julia Michaels),JP Saxe,2700344,https://open.spotify.com/track/2kJwzbxV2ppxnQoYw4GLBZ
+July,Noah Cyrus,2671564,https://open.spotify.com/track/5a6pdCHlWS2ekOOQ70QnAr
+Wow.,Post Malone,2664508,https://open.spotify.com/track/7xQAfvXzm3AkraOtGPWIZg
+Watermelon Sugar,Harry Styles,2664219,https://open.spotify.com/track/6UelLqGlWMcVH1E5c4H7lY
+SLOW DANCING IN THE DARK,Joji,2656058,https://open.spotify.com/track/0rKtyWc8bvkriBthvHKY8d
+All Girls Are The Same,Juice WRLD,2655351,https://open.spotify.com/track/4VXIryQMWpIdGgYR4TrjT1
+What If I Told You That I Love You,Ali Gatie,2654795,https://open.spotify.com/track/3cqPu20DGTGUoZtbJH2Dmi
+Make No Sense,YoungBoy Never Broke Again,2581435,https://open.spotify.com/track/6klLvorLoo1sxvZcjJIY8I
+No Guidance (feat. Drake),Chris Brown,2581050,https://open.spotify.com/track/6XHVuErjQ4XNm6nDPVCxVX
+Still Be Friends (feat. Tory Lanez & Tyga),G-Eazy,2574539,https://open.spotify.com/track/0JjM9bKm4wrwohMslcm892
+EARFQUAKE,Tyler The Creator,2525669,https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0
+Only The Young - Featured in Miss Americana,Taylor Swift,2517785,https://open.spotify.com/track/2slqvGLwzZZYsT4K4Y1GBC
+Start Wit Me (feat. Gunna),Roddy Ricch,2496303,https://open.spotify.com/track/7A20WnLkjtZU2d7hIB6Ziu
+me & ur ghost,blackbear,2456561,https://open.spotify.com/track/4yJiXq86uM56uIfIZgE440
+Señorita,Shawn Mendes,2446460,https://open.spotify.com/track/6v3KW9xbzN5yKLt9YKDYA2
+Stuck In A Dream (feat. Gunna),Lil Mosey,2440598,https://open.spotify.com/track/7iHHxY2NLlJRAmlAmC4ahQ
+Camelot,NLE Choppa,2405478,https://open.spotify.com/track/4sWuPniHClkInYAnzXAYUF
+Baby (Lil Baby feat. DaBaby),Quality Control,2403407,https://open.spotify.com/track/5MPPttjfGap2C6j6eKcO6J
+Going Bad (feat. Drake),Meek Mill,2391169,https://open.spotify.com/track/2IRZnDFmlqMuOrYOLnZZyc
+King Of My City,A Boogie Wit da Hoodie,2374991,https://open.spotify.com/track/4GyMIm2BEMoOXjmIvSpfLi
+Murder On My Mind,YNW Melly,2371167,https://open.spotify.com/track/7eBqSVxrzQZtK2mmgRG6lC
+Death,Trippie Redd,2348709,https://open.spotify.com/track/3Kd6Wp3lG5HXMB2dlvuy7y
+RITMO (Bad Boys For Life),Black Eyed Peas,2340268,https://open.spotify.com/track/6cy3ki60hLwimwIje7tALf
+Drip Too Hard (Lil Baby & Gunna),Lil Baby,2308625,https://open.spotify.com/track/78QR3Wp35dqAhFEc2qAGjE
+Jocelyn Flores,XXXTENTACION,2308262,https://open.spotify.com/track/7m9OqQk4RVRkw9JJdeAw96
+"All I Want - From ""High School Musical: The Musical: The Series""",Olivia Rodrigo,2304300,https://open.spotify.com/track/4Yxc55NX3tAXC2mHRAhtcW
+Pop Out (feat. Lil Tjay),Polo G,2278785,https://open.spotify.com/track/6uFn47ACjqYkc0jADwEdj1
+Keii,Anuel AA,2277970,https://open.spotify.com/track/5eEQCfq7MXQr6aHLNRUZLs
+Maniac,Conan Gray,2272163,https://open.spotify.com/track/7hpJ9tATWb2vztlq99hERP
+Hate Me (with Juice WRLD),Ellie Goulding,2249002,https://open.spotify.com/track/6kls8cSlUyHW2BUOkDJIZE
+Vete,Bad Bunny,2238643,https://open.spotify.com/track/5DxXgozhkPLgrbKFY91w0c
+SICKO MODE,Travis Scott,2238062,https://open.spotify.com/track/2xLMifQCjDGFmkHkpNLD9h
+Legends,Juice WRLD,2208616,https://open.spotify.com/track/1Knctxx9vGZxpZfF66BIEa
+Yellow Hearts,Ant Saunders,2206227,https://open.spotify.com/track/2W4yABdLc4Jnds67Poi5Nl
+SAD!,XXXTENTACION,2184337,https://open.spotify.com/track/3ee8Jmje8o58CHK66QrVC2
+F.N,Lil Tjay,2183034,https://open.spotify.com/track/0RLLvYBopDwooCyvnTwgYu
+ocean eyes,Billie Eilish,2157533,https://open.spotify.com/track/2uIX8YMNjGMD7441kqyyNU
+The London (feat. J. Cole & Travis Scott),Young Thug,2144067,https://open.spotify.com/track/3s4mrPrEFFPF0LmAfutW0n
+HIGHEST IN THE ROOM (feat. ROSALÍA & Lil Baby) - REMIX,Travis Scott,2132792,https://open.spotify.com/track/7h0d2h0fUmzbs7zeFigJPn
+I Fall Apart,Post Malone,2128749,https://open.spotify.com/track/75ZvA4QfFiZvzhj2xkaWAh
+One Thing Right,Marshmello,2117166,https://open.spotify.com/track/4hPpVbbakQNv8YTHYaOJP4
+rockstar (feat. 21 Savage),Post Malone,2117058,https://open.spotify.com/track/0e7ipj03S05BNilyu5bRzt
+Swervin (feat. 6ix9ine),A Boogie Wit da Hoodie,2084640,https://open.spotify.com/track/1wJRveJZLSb1rjhnUHQiv6
+Take What You Want (feat. Ozzy Osbourne & Travis Scott),Post Malone,2084036,https://open.spotify.com/track/7CZyCXKG6d5ALeq41sLzbw
+7 rings,Ariana Grande,2073979,https://open.spotify.com/track/6ocbgoVGwYJhOv1GgI9NsF
+No Judgement,Niall Horan,2052888,https://open.spotify.com/track/5IUOU5xkzGHsRFOYNu3GSK
+BEST ON EARTH (feat. BIA) - Bonus,Russ,2040471,https://open.spotify.com/track/0xKBkLcF71uUQeTA7FSu4A
+Revenge,Joyner Lucas,2033146,https://open.spotify.com/track/43mwjiAXLMqkOv4vtlNweU
+Enemies (feat. DaBaby),Post Malone,2033084,https://open.spotify.com/track/0Xek5rqai2jcOWCYWJfVCF
+Without Me,Halsey,2022734,https://open.spotify.com/track/6FZDfxM3a3UCqtzo5pxSLZ
+FML,Arizona Zervas,2018588,https://open.spotify.com/track/6lruHh1jF7ezgbLv72xYmf
+Peta (feat. Meek Mill),Roddy Ricch,1994557,https://open.spotify.com/track/4bl1HBZliBuYpFZjWgefE4
+One Man Band,Old Dominion,1994415,https://open.spotify.com/track/08dFHFTx6r67MTsYn5ilDR
+Lalala,Y2K,1993555,https://open.spotify.com/track/51Fjme0JiitpyXKuyQiCDo
+Lose Control,MEDUZA,1990633,https://open.spotify.com/track/7CHi4DtfK4heMlQaudCuHK
+Beautiful People (feat. Khalid),Ed Sheeran,1979546,https://open.spotify.com/track/70eFcWOvlMObDhURTqT4Fv
+Better Now,Post Malone,1969783,https://open.spotify.com/track/7dt6x5M1jzdTEt8oCbisTK
+Lights Up,Harry Styles,1955402,https://open.spotify.com/track/4jAIqgrPjKLTY9Gbez25Qb
+Armed And Dangerous,Juice WRLD,1948917,https://open.spotify.com/track/5wujBwqG7INdStqGd4tRMX
+I Don't Care (with Justin Bieber),Ed Sheeran,1947039,https://open.spotify.com/track/0hVXuCcriWRGvwMV1r5Yn9
+VALENTINO,24kGoldn,1945712,https://open.spotify.com/track/6piAUJJQFD8oHDUr0b7l7q
+I Hope,Gabby Barrett,1944662,https://open.spotify.com/track/2Hc4t9N2nt37oO4sF9BynI
+Panini,Lil Nas X,1943211,https://open.spotify.com/track/1000nHvUdawXuUHgBod4Wv
+Falling,Harry Styles,1931200,https://open.spotify.com/track/1ZMiCix7XSAbfAJlEZWMCp
+Talk (feat. Disclosure),Khalid,1915358,https://open.spotify.com/track/6TqXcAFInzjp0bODyvrWEq
+You Need To Calm Down,Taylor Swift,1912917,https://open.spotify.com/track/6RRNNciQGZEXnqk8SQ9yv5
+Blue World,Mac Miller,1909374,https://open.spotify.com/track/2hwOoMtWPtTSSn6WHV7Vp5
+Sanguine Paradise,Lil Uzi Vert,1898744,https://open.spotify.com/track/3XiNC94b4Tq1xwv70sQJGN
+How I Move (feat. Lil Baby),Flipp Dinero,1898510,https://open.spotify.com/track/14X1WxiHXdVRJ99cMCBzOE
+Eastside (with Halsey & Khalid),benny blanco,1897652,https://open.spotify.com/track/7FGq80cy8juXBCD2nrqdWU
+XO Tour Llif3,Lil Uzi Vert,1896778,https://open.spotify.com/track/7GX5flRQZVHRAGd6B4TmDO
+Never Seen the Rain,Tones and I,1895109,https://open.spotify.com/track/2grAr8pWMuLWn8ZYEE9wDV
+Beautiful Crazy,Luke Combs,1895102,https://open.spotify.com/track/2rxQMGVafnNaRaXlRMWPde
+Juicy (feat. Tyga),Doja Cat,1882300,https://open.spotify.com/track/7f5trao56t7sB7f14QDTmp
+Sucker,Jonas Brothers,1881740,https://open.spotify.com/track/22vgEDb5hykfaTwLuskFGD
+Fuck Love (feat. Trippie Redd),XXXTENTACION,1877763,https://open.spotify.com/track/7AQim7LbvFVZJE3O8TYgf2
+goosebumps,Travis Scott,1876513,https://open.spotify.com/track/6gBFPUFcJLzWGx4lenP6h2
+Believe (feat. Justin Timberlake),Meek Mill,1860973,https://open.spotify.com/track/6fvqvUQr12qghH4N8gpAch
+Whiskey Glasses,Morgan Wallen,1854843,https://open.spotify.com/track/6foY66mWZN0pSRjZ408c00
+Speechless,Dan + Shay,1852061,https://open.spotify.com/track/3GJ4hzg4lrGwU51Y3VARbF
+i love you,Billie Eilish,1848378,https://open.spotify.com/track/6CcJMwBtXByIz4zQLzFkKc
+Old Town Road - Remix,Lil Nas X,1842333,https://open.spotify.com/track/2YpeDb67231RjR0MgVLzsG
+It's You,Ali Gatie,1827574,https://open.spotify.com/track/5DqdesEfbRyOlSS3Tf6c29
+Heartless (feat. Morgan Wallen),Diplo,1825240,https://open.spotify.com/track/0rFQ5cKYJ9WtHSKp9sxVYt
+Shake The Room (feat. Quavo),Pop Smoke,1824455,https://open.spotify.com/track/7rSnKi58HPIVC0FVyh04Q1
+bury a friend,Billie Eilish,1818882,https://open.spotify.com/track/4SSnFejRGlZikf02HLewEF
+Lean Wit Me,Juice WRLD,1818191,https://open.spotify.com/track/3oDkdAySo1VQQG0ptV7uwa
+Eleven,Khalid,1815496,https://open.spotify.com/track/1ToprX3cpBiXoAe5eNSk74
+Hot (feat. Gunna),Young Thug,1812796,https://open.spotify.com/track/5Z8HZM6iQMhhqyPcCGY5g9
+Happier,Marshmello,1793656,https://open.spotify.com/track/2dpaYNEQHiRxtZbfNsse99
+Cash Shit (feat. DaBaby),Megan Thee Stallion,1793358,https://open.spotify.com/track/2rMAtCaTj16NptyVfEIeAC
+Moonlight,XXXTENTACION,1788104,https://open.spotify.com/track/0JP9xo3adEtGSdUEISiszL
+Yes Indeed,Lil Baby,1777558,https://open.spotify.com/track/6vN77lE9LK6HP2DewaN6HZ
+The Less I Know The Better,Tame Impala,1757951,https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ
+Diva (feat. Lil Tecca),The Kid LAROI,1757439,https://open.spotify.com/track/7gVwgc8b3XnO87TpmXXFA5
+Better,Khalid,1746286,https://open.spotify.com/track/6zeeWid2sgw4lap2jV61PZ
+Best Part (feat. Daniel Caesar),H.E.R.,1738853,https://open.spotify.com/track/4OBZT9EnhYIV17t4pGw7ig
+Graveyard,Halsey,1736600,https://open.spotify.com/track/2ufmtcIFdFpuUYBPXK5f67
+Ransom (with Juice WRLD) - Remix,Lil Tecca,1725750,https://open.spotify.com/track/2WsuSYJNXGKXVYkHPnq2yp
+I.F.L.Y.,Bazzi,1708537,https://open.spotify.com/track/4a6q8CR2hzLk2plDkSxkfD
+Pure Water (with Migos),Mustard,1705482,https://open.spotify.com/track/3j84U36KvLeXNDPv4t5pI8
+Say You Won't Let Go,James Arthur,1705414,https://open.spotify.com/track/5uCax9HTNlzGybIStD3vDh
+Callaita,Bad Bunny,1703311,https://open.spotify.com/track/2TH65lNHgvLxCKXM3apjxI
+P*$$Y Fairy (OTW),Jhené Aiko,1682394,https://open.spotify.com/track/48KXAIruJ07kJVCWOGohMV
+Congratulations,Post Malone,1682012,https://open.spotify.com/track/3a1lNhkSLSkpJE4MSHpDu9
+UP THE SMOKE (with Offset),Stunna 4 Vegas,1680362,https://open.spotify.com/track/3faAAUxohrxqYhPlneZ3XV
+6 Kiss,Trippie Redd,1678190,https://open.spotify.com/track/7tgjDlQsMR8RvkdlNCJA58
+thank u next,Ariana Grande,1676242,https://open.spotify.com/track/3e9HZxeyfWwjeyPAMmWSSQ
+Into the Unknown,Idina Menzel,1675787,https://open.spotify.com/track/3Z0oQ8r78OUaHvGPiDBR3W
+Envy Me,Calboy,1674392,https://open.spotify.com/track/7rvyVWja33WG9R97oeJAjx
+wish you were gay,Billie Eilish,1674164,https://open.spotify.com/track/3Fj47GNK2kUF0uaEDgXLaD
+Heart On Ice,Rod Wave,1671420,https://open.spotify.com/track/6fWa5CRgy0z30OeGZyMBvD
+Lottery (Renegade),K CAMP,1669641,https://open.spotify.com/track/4dZTZbmJBCCofAExHwefda
+Tip Toe (feat. A Boogie Wit da Hoodie),Roddy Ricch,1667930,https://open.spotify.com/track/6ztvsy3C6hPjVg9j4x1XKJ
+Let Me Know (I Wonder Why Freestyle),Juice WRLD,1662142,https://open.spotify.com/track/3wwo0bJvDSorOpNfzEkfXx
+20 Min,Lil Uzi Vert,1656110,https://open.spotify.com/track/0uxSUdBrJy9Un0EYoBowng
+Bruises,Lewis Capaldi,1655603,https://open.spotify.com/track/4Of7rzpRpV1mWRbhp5rAqG
+Birthday,Anne-Marie,1650168,https://open.spotify.com/track/5hff5RQeE84pznOt8WEWeO
+Noticed,Lil Mosey,1649736,https://open.spotify.com/track/7zLYKWcXnYeHHWidalz7rj
+No Role Modelz,J. Cole,1644768,https://open.spotify.com/track/62vpWI1CHwFy7tMIcSStl8
+Faucet Failure,Ski Mask The Slump God,1633724,https://open.spotify.com/track/1ThmUihH9dF8EV08ku5AXN
+Get You The Moon (feat. Snøw),Kina,1615642,https://open.spotify.com/track/4ZLzoOkj0MPWrTLvooIuaa
+a lot,21 Savage,1604452,https://open.spotify.com/track/2t8yVaLvJ0RenpXUIAC52d
+I Like Me Better,Lauv,1598304,https://open.spotify.com/track/2P91MQbaiQOfbiz9VqhqKQ
+Boss Bitch,Doja Cat,1592039,https://open.spotify.com/track/78qd8dvwea0Gosb6Fe6j3k
+Ayy Macarena,Tyga,1590185,https://open.spotify.com/track/6LcauUZjF1eXQrgqMUecHX
+LA CANCIÓN,J Balvin,1586906,https://open.spotify.com/track/0fea68AdmYNygeTGI4RC18
+Hope,XXXTENTACION,1585645,https://open.spotify.com/track/2ZRo7axmMPeSVUvDbGkJah
+you should see me in a crown,Billie Eilish,1583345,https://open.spotify.com/track/3XF5xLJHOQQRbWya6hBp7d
+changes,XXXTENTACION,1583331,https://open.spotify.com/track/7AFASza1mXqntmGtbxXprO
+I Don't Sleep (ft. Takeoff),Lil Wayne,1578436,https://open.spotify.com/track/03TzvVWdkVbLT9pzewYiDw
+you were good to me,Jeremy Zucker,1576447,https://open.spotify.com/track/4CxFN5zON70B3VOPBYbd6P
+]0;delamran@sol28:~[delamran@sol28 ~]$ cut[K[K[K-cut -d, -f3[K,[K3-4 ==[K[K--[K[K[K[K[K[K3,4 --complement songs.csv
+bash: -cut: command not found...
+Similar command is: 'cut'
+]0;delamran@sol28:~[delamran@sol28 ~]$ cut -d, f[K-f3,4 -- [Kcomplement songs.csv
+1,The Box,https://open.spotify.com/track/0nbXyq5TXYPCO7pr3N8S4I
+2,Life Is Good (feat. Drake),https://open.spotify.com/track/5yY9lUy8nbvjM1Uyo1Uqoc
+3,Intentions,https://open.spotify.com/track/364dI1bYnvamSnBJ8JcNzN
+4,ROXANNE,https://open.spotify.com/track/696DnlkuDOXcMAnKlTgXXK
+5,High Fashion (feat. Mustard),https://open.spotify.com/track/07KXEDMj78x68D884wgVEm
+6,Blinding Lights,https://open.spotify.com/track/0sf12qNH5qcw8qpgymFOqD
+7,Godzilla (feat. Juice WRLD),https://open.spotify.com/track/7FIWs0pqAYbP91WWM0vlTQ
+8,Falling,https://open.spotify.com/track/4TnjEaWOeW0eKTKIEvJyCa
+9,Don't Start Now,https://open.spotify.com/track/6WrI0LAC5M1Rw2MnX2ZvEg
+10,Circles,https://open.spotify.com/track/21jGcNKet2qwijlDFuPiPb
+11,everything i wanted,https://open.spotify.com/track/3ZCTVFBt2Brf31RLEnCkWJ
+12,BOP,https://open.spotify.com/track/6Ozh9Ok6h4Oi1wUSLtBseN
+13,Dance Monkey,https://open.spotify.com/track/1rgnBhdG2JDFTbYkYRZAku
+14,Suicidal,https://open.spotify.com/track/1iSqfoUFnQwV0QW1EfUit8
+15,Blueberry Faygo,https://open.spotify.com/track/6wJYhPfqk3KGhHRG76WzOh
+16,Run,https://open.spotify.com/track/6p8eEdiZLKJH8tcjGZuNTK
+17,Ballin' (with Roddy Ricch),https://open.spotify.com/track/3QzAOrNlsabgbMwlZt7TAY
+18,Say So,https://open.spotify.com/track/3Dv1eDb0MEgF93GpLXlucZ
+19,TOES (feat. Lil Baby & Moneybagg Yo),https://open.spotify.com/track/2FvD20Z8aoWIePi7PoN8sG
+20,Bandit (with YoungBoy Never Broke Again),https://open.spotify.com/track/6Gg1gjgKi2AK4e0qzsR7sd
+21,Adore You,https://open.spotify.com/track/3jjujdWJ72nww5eGnfs2E7
+22,You should be sad,https://open.spotify.com/track/7lidXGPXPYLNThITAOTlkK
+23,SUGAR,https://open.spotify.com/track/6U0FIYXCQ3TGrk4tFpLrEA
+24,Yummy,https://open.spotify.com/track/41L3O37CECZt3N7ziG2z7l
+25,Woah,https://open.spotify.com/track/598yNsG1JFrGd4n2kMoz7F
+26,WHATS POPPIN,https://open.spotify.com/track/3Q6F8RByyhRTJpRtZLY3cg
+27,OUT WEST (feat. Young Thug),https://open.spotify.com/track/6gi6y1xwmVszDWkUqab1qw
+28,Know Your Worth,https://open.spotify.com/track/0TrPqhAMoaKUFLR7iYDokf
+29,My Oh My (feat. DaBaby),https://open.spotify.com/track/3yOlyBJuViE2YSGn3nVE1K
+30,Someone You Loved,https://open.spotify.com/track/7qEHsqek33rTcFNT9PFqLf
+31,Sunflower - Spider-Man: Into the Spider-Verse,https://open.spotify.com/track/0RiRZpuVRbi7oqRdSMwhQY
+32,Futsal Shuffle 2020,https://open.spotify.com/track/2Ec33AVlkTTq8BHFgBTdQs
+33,hot girl bummer,https://open.spotify.com/track/7aiClxsDWFRQ0Kzk5KI5ku
+34,Yikes,https://open.spotify.com/track/75dLEqanQTupF3dtP9exT5
+35,HIGHEST IN THE ROOM,https://open.spotify.com/track/3eekarcy7kvN4yt5ZFzltW
+36,bad guy,https://open.spotify.com/track/2Fxmhks0bxGSBdJ92vM42m
+37,What A Man Gotta Do,https://open.spotify.com/track/4wNIkl5XGiAACjFBlDWuSd
+38,Good News,https://open.spotify.com/track/1DWZUa5Mzf2BwzpHtgbHPY
+39,Lucid Dreams,https://open.spotify.com/track/285pBltuF7vW8TeWk8hdRR
+40,VIBEZ,https://open.spotify.com/track/0fySG6A6qLE8IvDpayb5bM
+41,No Idea,https://open.spotify.com/track/3VyjsVV24RmBIbWJAeUJNu
+42,I Do It (ft. Big Sean Lil Baby),https://open.spotify.com/track/1bRO28yzxgO3y3UmNR29TZ
+43,Tusa,https://open.spotify.com/track/7k4t7uLgtOxPwTpFmtJNTY
+44,Robbery,https://open.spotify.com/track/6Hj9jySrnFppAI0sEMCZpJ
+45,Sum 2 Prove,https://open.spotify.com/track/2u3EyuCqqV31woqGvO9LBz
+46,10000 Hours (with Justin Bieber),https://open.spotify.com/track/2wrJq5XKLnmhRXHIAf9xBa
+47,GOODMORNINGTOKYO!,https://open.spotify.com/track/0Q2n5yzl2XRqYbV77tZNYp
+48,when the party's over,https://open.spotify.com/track/43zdsphuZLzwA9k4DJhU0I
+49,Memories,https://open.spotify.com/track/2b8fOow8UzyDFAE27YhOZM
+50,Suge,https://open.spotify.com/track/2gwkD6igEhQbDQegRCcdoB
+51,Lose You To Love Me,https://open.spotify.com/track/4l0Mvzj72xxOpRrp6h8nHi
+52,Sunday Best,https://open.spotify.com/track/1Cv1YLb4q0RzL6pybtaMLo
+53,Broke In A Minute,https://open.spotify.com/track/2ZrAjMSmlbDIil0JaVgTHh
+54,Physical,https://open.spotify.com/track/5px6upUHM3fhOP621Edp4V
+55,Money In The Grave (Drake ft. Rick Ross),https://open.spotify.com/track/5ry2OE6R2zPQFDO85XkgRb
+56,Heartless,https://open.spotify.com/track/57vxBYXtHMk6H1aD29V7PU
+57,ORANGE SODA,https://open.spotify.com/track/5FkoSXiJPKTNyYgALRJFhD
+58,Before You Go,https://open.spotify.com/track/2gMXnyrvIjhVBUZwvLZDMP
+59,Ransom,https://open.spotify.com/track/1lOe9qE0vR9zwWQAOk6CoO
+60,Rare,https://open.spotify.com/track/7HMmFQsKsljwTw8bS7lu19
+61,No Shame,https://open.spotify.com/track/5JSVa5i6lFPoyOzK4gj0Ox
+62,YELL OH,https://open.spotify.com/track/003VDDA7J3Xb2ZFlNx7nIZ
+63,Goodbyes (Feat. Young Thug),https://open.spotify.com/track/6vBdBCoOhKHiYDDOcorfNo
+64,223's (feat. 9lokknine),https://open.spotify.com/track/29ZXwWOOLz9t5fa3eT3i7T
+65,Truth Hurts,https://open.spotify.com/track/3HWzoMvoF3TQfYg4UPszDq
+66,lovely (with Khalid),https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4
+67,MIDDLE CHILD,https://open.spotify.com/track/2JvzF1RMd7lE3KmFlsyZD8
+68,Hot (Remix) [feat. Gunna and Travis Scott],https://open.spotify.com/track/4ea9w8c4ROqiZpJVhfBA3m
+69,If The World Was Ending (feat. Julia Michaels),https://open.spotify.com/track/2kJwzbxV2ppxnQoYw4GLBZ
+70,July,https://open.spotify.com/track/5a6pdCHlWS2ekOOQ70QnAr
+71,Wow.,https://open.spotify.com/track/7xQAfvXzm3AkraOtGPWIZg
+72,Watermelon Sugar,https://open.spotify.com/track/6UelLqGlWMcVH1E5c4H7lY
+73,SLOW DANCING IN THE DARK,https://open.spotify.com/track/0rKtyWc8bvkriBthvHKY8d
+74,All Girls Are The Same,https://open.spotify.com/track/4VXIryQMWpIdGgYR4TrjT1
+75,What If I Told You That I Love You,https://open.spotify.com/track/3cqPu20DGTGUoZtbJH2Dmi
+76,Make No Sense,https://open.spotify.com/track/6klLvorLoo1sxvZcjJIY8I
+77,No Guidance (feat. Drake),https://open.spotify.com/track/6XHVuErjQ4XNm6nDPVCxVX
+78,Still Be Friends (feat. Tory Lanez & Tyga),https://open.spotify.com/track/0JjM9bKm4wrwohMslcm892
+79,EARFQUAKE,https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0
+80,Only The Young - Featured in Miss Americana,https://open.spotify.com/track/2slqvGLwzZZYsT4K4Y1GBC
+81,Start Wit Me (feat. Gunna),https://open.spotify.com/track/7A20WnLkjtZU2d7hIB6Ziu
+82,me & ur ghost,https://open.spotify.com/track/4yJiXq86uM56uIfIZgE440
+83,Señorita,https://open.spotify.com/track/6v3KW9xbzN5yKLt9YKDYA2
+84,Stuck In A Dream (feat. Gunna),https://open.spotify.com/track/7iHHxY2NLlJRAmlAmC4ahQ
+85,Camelot,https://open.spotify.com/track/4sWuPniHClkInYAnzXAYUF
+86,Baby (Lil Baby feat. DaBaby),https://open.spotify.com/track/5MPPttjfGap2C6j6eKcO6J
+87,Going Bad (feat. Drake),https://open.spotify.com/track/2IRZnDFmlqMuOrYOLnZZyc
+88,King Of My City,https://open.spotify.com/track/4GyMIm2BEMoOXjmIvSpfLi
+89,Murder On My Mind,https://open.spotify.com/track/7eBqSVxrzQZtK2mmgRG6lC
+90,Death,https://open.spotify.com/track/3Kd6Wp3lG5HXMB2dlvuy7y
+91,RITMO (Bad Boys For Life),https://open.spotify.com/track/6cy3ki60hLwimwIje7tALf
+92,Drip Too Hard (Lil Baby & Gunna),https://open.spotify.com/track/78QR3Wp35dqAhFEc2qAGjE
+93,Jocelyn Flores,https://open.spotify.com/track/7m9OqQk4RVRkw9JJdeAw96
+94,"All I Want - From ""High School Musical: The Musical: The Series""",https://open.spotify.com/track/4Yxc55NX3tAXC2mHRAhtcW
+95,Pop Out (feat. Lil Tjay),https://open.spotify.com/track/6uFn47ACjqYkc0jADwEdj1
+96,Keii,https://open.spotify.com/track/5eEQCfq7MXQr6aHLNRUZLs
+97,Maniac,https://open.spotify.com/track/7hpJ9tATWb2vztlq99hERP
+98,Hate Me (with Juice WRLD),https://open.spotify.com/track/6kls8cSlUyHW2BUOkDJIZE
+99,Vete,https://open.spotify.com/track/5DxXgozhkPLgrbKFY91w0c
+100,SICKO MODE,https://open.spotify.com/track/2xLMifQCjDGFmkHkpNLD9h
+101,Legends,https://open.spotify.com/track/1Knctxx9vGZxpZfF66BIEa
+102,Yellow Hearts,https://open.spotify.com/track/2W4yABdLc4Jnds67Poi5Nl
+103,SAD!,https://open.spotify.com/track/3ee8Jmje8o58CHK66QrVC2
+104,F.N,https://open.spotify.com/track/0RLLvYBopDwooCyvnTwgYu
+105,ocean eyes,https://open.spotify.com/track/2uIX8YMNjGMD7441kqyyNU
+106,The London (feat. J. Cole & Travis Scott),https://open.spotify.com/track/3s4mrPrEFFPF0LmAfutW0n
+107,HIGHEST IN THE ROOM (feat. ROSALÍA & Lil Baby) - REMIX,https://open.spotify.com/track/7h0d2h0fUmzbs7zeFigJPn
+108,I Fall Apart,https://open.spotify.com/track/75ZvA4QfFiZvzhj2xkaWAh
+109,One Thing Right,https://open.spotify.com/track/4hPpVbbakQNv8YTHYaOJP4
+110,rockstar (feat. 21 Savage),https://open.spotify.com/track/0e7ipj03S05BNilyu5bRzt
+111,Swervin (feat. 6ix9ine),https://open.spotify.com/track/1wJRveJZLSb1rjhnUHQiv6
+112,Take What You Want (feat. Ozzy Osbourne & Travis Scott),https://open.spotify.com/track/7CZyCXKG6d5ALeq41sLzbw
+113,7 rings,https://open.spotify.com/track/6ocbgoVGwYJhOv1GgI9NsF
+114,No Judgement,https://open.spotify.com/track/5IUOU5xkzGHsRFOYNu3GSK
+115,BEST ON EARTH (feat. BIA) - Bonus,https://open.spotify.com/track/0xKBkLcF71uUQeTA7FSu4A
+116,Revenge,https://open.spotify.com/track/43mwjiAXLMqkOv4vtlNweU
+117,Enemies (feat. DaBaby),https://open.spotify.com/track/0Xek5rqai2jcOWCYWJfVCF
+118,Without Me,https://open.spotify.com/track/6FZDfxM3a3UCqtzo5pxSLZ
+119,FML,https://open.spotify.com/track/6lruHh1jF7ezgbLv72xYmf
+120,Peta (feat. Meek Mill),https://open.spotify.com/track/4bl1HBZliBuYpFZjWgefE4
+121,One Man Band,https://open.spotify.com/track/08dFHFTx6r67MTsYn5ilDR
+122,Lalala,https://open.spotify.com/track/51Fjme0JiitpyXKuyQiCDo
+123,Lose Control,https://open.spotify.com/track/7CHi4DtfK4heMlQaudCuHK
+124,Beautiful People (feat. Khalid),https://open.spotify.com/track/70eFcWOvlMObDhURTqT4Fv
+125,Better Now,https://open.spotify.com/track/7dt6x5M1jzdTEt8oCbisTK
+126,Lights Up,https://open.spotify.com/track/4jAIqgrPjKLTY9Gbez25Qb
+127,Armed And Dangerous,https://open.spotify.com/track/5wujBwqG7INdStqGd4tRMX
+128,I Don't Care (with Justin Bieber),https://open.spotify.com/track/0hVXuCcriWRGvwMV1r5Yn9
+129,VALENTINO,https://open.spotify.com/track/6piAUJJQFD8oHDUr0b7l7q
+130,I Hope,https://open.spotify.com/track/2Hc4t9N2nt37oO4sF9BynI
+131,Panini,https://open.spotify.com/track/1000nHvUdawXuUHgBod4Wv
+132,Falling,https://open.spotify.com/track/1ZMiCix7XSAbfAJlEZWMCp
+133,Talk (feat. Disclosure),https://open.spotify.com/track/6TqXcAFInzjp0bODyvrWEq
+134,You Need To Calm Down,https://open.spotify.com/track/6RRNNciQGZEXnqk8SQ9yv5
+135,Blue World,https://open.spotify.com/track/2hwOoMtWPtTSSn6WHV7Vp5
+136,Sanguine Paradise,https://open.spotify.com/track/3XiNC94b4Tq1xwv70sQJGN
+137,How I Move (feat. Lil Baby),https://open.spotify.com/track/14X1WxiHXdVRJ99cMCBzOE
+138,Eastside (with Halsey & Khalid),https://open.spotify.com/track/7FGq80cy8juXBCD2nrqdWU
+139,XO Tour Llif3,https://open.spotify.com/track/7GX5flRQZVHRAGd6B4TmDO
+140,Never Seen the Rain,https://open.spotify.com/track/2grAr8pWMuLWn8ZYEE9wDV
+141,Beautiful Crazy,https://open.spotify.com/track/2rxQMGVafnNaRaXlRMWPde
+142,Juicy (feat. Tyga),https://open.spotify.com/track/7f5trao56t7sB7f14QDTmp
+143,Sucker,https://open.spotify.com/track/22vgEDb5hykfaTwLuskFGD
+144,Fuck Love (feat. Trippie Redd),https://open.spotify.com/track/7AQim7LbvFVZJE3O8TYgf2
+145,goosebumps,https://open.spotify.com/track/6gBFPUFcJLzWGx4lenP6h2
+146,Believe (feat. Justin Timberlake),https://open.spotify.com/track/6fvqvUQr12qghH4N8gpAch
+147,Whiskey Glasses,https://open.spotify.com/track/6foY66mWZN0pSRjZ408c00
+148,Speechless,https://open.spotify.com/track/3GJ4hzg4lrGwU51Y3VARbF
+149,i love you,https://open.spotify.com/track/6CcJMwBtXByIz4zQLzFkKc
+150,Old Town Road - Remix,https://open.spotify.com/track/2YpeDb67231RjR0MgVLzsG
+151,It's You,https://open.spotify.com/track/5DqdesEfbRyOlSS3Tf6c29
+152,Heartless (feat. Morgan Wallen),https://open.spotify.com/track/0rFQ5cKYJ9WtHSKp9sxVYt
+153,Shake The Room (feat. Quavo),https://open.spotify.com/track/7rSnKi58HPIVC0FVyh04Q1
+154,bury a friend,https://open.spotify.com/track/4SSnFejRGlZikf02HLewEF
+155,Lean Wit Me,https://open.spotify.com/track/3oDkdAySo1VQQG0ptV7uwa
+156,Eleven,https://open.spotify.com/track/1ToprX3cpBiXoAe5eNSk74
+157,Hot (feat. Gunna),https://open.spotify.com/track/5Z8HZM6iQMhhqyPcCGY5g9
+158,Happier,https://open.spotify.com/track/2dpaYNEQHiRxtZbfNsse99
+159,Cash Shit (feat. DaBaby),https://open.spotify.com/track/2rMAtCaTj16NptyVfEIeAC
+160,Moonlight,https://open.spotify.com/track/0JP9xo3adEtGSdUEISiszL
+161,Yes Indeed,https://open.spotify.com/track/6vN77lE9LK6HP2DewaN6HZ
+162,The Less I Know The Better,https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ
+163,Diva (feat. Lil Tecca),https://open.spotify.com/track/7gVwgc8b3XnO87TpmXXFA5
+164,Better,https://open.spotify.com/track/6zeeWid2sgw4lap2jV61PZ
+165,Best Part (feat. Daniel Caesar),https://open.spotify.com/track/4OBZT9EnhYIV17t4pGw7ig
+166,Graveyard,https://open.spotify.com/track/2ufmtcIFdFpuUYBPXK5f67
+167,Ransom (with Juice WRLD) - Remix,https://open.spotify.com/track/2WsuSYJNXGKXVYkHPnq2yp
+168,I.F.L.Y.,https://open.spotify.com/track/4a6q8CR2hzLk2plDkSxkfD
+169,Pure Water (with Migos),https://open.spotify.com/track/3j84U36KvLeXNDPv4t5pI8
+170,Say You Won't Let Go,https://open.spotify.com/track/5uCax9HTNlzGybIStD3vDh
+171,Callaita,https://open.spotify.com/track/2TH65lNHgvLxCKXM3apjxI
+172,P*$$Y Fairy (OTW),https://open.spotify.com/track/48KXAIruJ07kJVCWOGohMV
+173,Congratulations,https://open.spotify.com/track/3a1lNhkSLSkpJE4MSHpDu9
+174,UP THE SMOKE (with Offset),https://open.spotify.com/track/3faAAUxohrxqYhPlneZ3XV
+175,6 Kiss,https://open.spotify.com/track/7tgjDlQsMR8RvkdlNCJA58
+176,thank u next,https://open.spotify.com/track/3e9HZxeyfWwjeyPAMmWSSQ
+177,Into the Unknown,https://open.spotify.com/track/3Z0oQ8r78OUaHvGPiDBR3W
+178,Envy Me,https://open.spotify.com/track/7rvyVWja33WG9R97oeJAjx
+179,wish you were gay,https://open.spotify.com/track/3Fj47GNK2kUF0uaEDgXLaD
+180,Heart On Ice,https://open.spotify.com/track/6fWa5CRgy0z30OeGZyMBvD
+181,Lottery (Renegade),https://open.spotify.com/track/4dZTZbmJBCCofAExHwefda
+182,Tip Toe (feat. A Boogie Wit da Hoodie),https://open.spotify.com/track/6ztvsy3C6hPjVg9j4x1XKJ
+183,Let Me Know (I Wonder Why Freestyle),https://open.spotify.com/track/3wwo0bJvDSorOpNfzEkfXx
+184,20 Min,https://open.spotify.com/track/0uxSUdBrJy9Un0EYoBowng
+185,Bruises,https://open.spotify.com/track/4Of7rzpRpV1mWRbhp5rAqG
+186,Birthday,https://open.spotify.com/track/5hff5RQeE84pznOt8WEWeO
+187,Noticed,https://open.spotify.com/track/7zLYKWcXnYeHHWidalz7rj
+188,No Role Modelz,https://open.spotify.com/track/62vpWI1CHwFy7tMIcSStl8
+189,Faucet Failure,https://open.spotify.com/track/1ThmUihH9dF8EV08ku5AXN
+190,Get You The Moon (feat. Snøw),https://open.spotify.com/track/4ZLzoOkj0MPWrTLvooIuaa
+191,a lot,https://open.spotify.com/track/2t8yVaLvJ0RenpXUIAC52d
+192,I Like Me Better,https://open.spotify.com/track/2P91MQbaiQOfbiz9VqhqKQ
+193,Boss Bitch,https://open.spotify.com/track/78qd8dvwea0Gosb6Fe6j3k
+194,Ayy Macarena,https://open.spotify.com/track/6LcauUZjF1eXQrgqMUecHX
+195,LA CANCIÓN,https://open.spotify.com/track/0fea68AdmYNygeTGI4RC18
+196,Hope,https://open.spotify.com/track/2ZRo7axmMPeSVUvDbGkJah
+197,you should see me in a crown,https://open.spotify.com/track/3XF5xLJHOQQRbWya6hBp7d
+198,changes,https://open.spotify.com/track/7AFASza1mXqntmGtbxXprO
+199,I Don't Sleep (ft. Takeoff),https://open.spotify.com/track/03TzvVWdkVbLT9pzewYiDw
+200,you were good to me,https://open.spotify.com/track/4CxFN5zON70B3VOPBYbd6P
+]0;delamran@sol28:~[delamran@sol28 ~]$ head -n 5 songs.csv
+1,The Box,Roddy Ricch,18883695,https://open.spotify.com/track/0nbXyq5TXYPCO7pr3N8S4I
+2,Life Is Good (feat. Drake),Future,11725270,https://open.spotify.com/track/5yY9lUy8nbvjM1Uyo1Uqoc
+3,Intentions,Justin Bieber,9044309,https://open.spotify.com/track/364dI1bYnvamSnBJ8JcNzN
+4,ROXANNE,Arizona Zervas,7884837,https://open.spotify.com/track/696DnlkuDOXcMAnKlTgXXK
+5,High Fashion (feat. Mustard),Roddy Ricch,7616758,https://open.spotify.com/track/07KXEDMj78x68D884wgVEm
+]0;delamran@sol28:~[delamran@sol28 ~]$ cut -d, -f1,4,5 >[K--complement songs.csv > repo[K[K[K[KsongsReport.scv[K[K[Kcsv
+]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mMyCalendars[0m   [01;34mpublic_html[0m  songsReport.csv
+log      [01;32mmyscript.exe[0m  songs.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ hed[Kad -n 5 songsReport.csv
+The Box,Roddy Ricch
+Life Is Good (feat. Drake),Future
+Intentions,Justin Bieber
+ROXANNE,Arizona Zervas
+High Fashion (feat. Mustard),Roddy Ricch
+]0;delamran@sol28:~[delamran@sol28 ~]$ head - [Kn 20 songsReport.csv > songsReport.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ head -n 20 songs.[KReport.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mMyCalendars[0m   [01;34mpublic_html[0m  songsReport.csv
+log      [01;32mmyscript.exe[0m  songs.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ head -n 5 songsReprt[K[K[Kport.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ cut - d[K[Kd [K, -f1 -- [Kcomplement songsReport.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ cut -d, f[K-f1,34[K,[K[K4,5 -- com[K[K[K[Kcomplee[Kment songs.csv > songsReport.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ head -n 5 songsreport.csv
+head: cannot open ‘songsreport.csv’ for reading: No such file or directory
+]0;delamran@sol28:~[delamran@sol28 ~]$ head -n t[K5 songsReo[Kport.csv
+The Box,Roddy Ricch
+Life Is Good (feat. Drake),Future
+Intentions,Justin Bieber
+ROXANNE,Arizona Zervas
+High Fashion (feat. Mustard),Roddy Ricch
+]0;delamran@sol28:~[delamran@sol28 ~]$ cut -d, [K[K[K[K[K[K[K[Kls
+[0m[01;34mexample[0m  [01;34mMyCalendars[0m   [01;34mpublic_html[0m  songsReport.csv
+log      [01;32mmyscript.exe[0m  songs.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ head -n songsReport[K[K[K[K[K[K[K[K[K[K[K20 songsrep[K[K[KReport.csv > top20Songs[K[K[K[K[Ksongs.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ head - n[K[Kn 15 top20songs.csv
+The Box,Roddy Ricch
+Life Is Good (feat. Drake),Future
+Intentions,Justin Bieber
+ROXANNE,Arizona Zervas
+High Fashion (feat. Mustard),Roddy Ricch
+Blinding Lights,The Weeknd
+Godzilla (feat. Juice WRLD),Eminem
+Falling,Trevor Daniel
+Don't Start Now,Dua Lipa
+Circles,Post Malone
+everything i wanted,Billie Eilish
+BOP,DaBaby
+Dance Monkey,Tones and I
+Suicidal,YNW Melly
+Blueberry Faygo,Lil Mosey
+]0;delamran@sol28:~[delamran@sol28 ~]$ head -n 15[K[K20 top20songs.csv
+The Box,Roddy Ricch
+Life Is Good (feat. Drake),Future
+Intentions,Justin Bieber
+ROXANNE,Arizona Zervas
+High Fashion (feat. Mustard),Roddy Ricch
+Blinding Lights,The Weeknd
+Godzilla (feat. Juice WRLD),Eminem
+Falling,Trevor Daniel
+Don't Start Now,Dua Lipa
+Circles,Post Malone
+everything i wanted,Billie Eilish
+BOP,DaBaby
+Dance Monkey,Tones and I
+Suicidal,YNW Melly
+Blueberry Faygo,Lil Mosey
+Run,Joji
+Ballin' (with Roddy Ricch),Mustard
+Say So,Doja Cat
+TOES (feat. Lil Baby & Moneybagg Yo),DaBaby
+Bandit (with YoungBoy Never Broke Again),Juice WRLD
+]0;delamran@sol28:~[delamran@sol28 ~]$ vim scriptFortop[K[K[KTop20songs[K.sh
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"scriptForTop20song.sh" [New File][>c[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll[1;1H[?12l[?25h[?25l[24;1H[1m-- INSERT --[m[24;13H[K[24;63H0,1[11CAll[1;1H[?12l[?25h[?25ld[24;63H1,2[1;2H[?12l[?25h[?25l[1;1H[K[24;65H1[1;1H[?12l[?25h[?25lc[24;65H2[1;2H[?12l[?25h[?25lu[24;65H3[1;3H[?12l[?25h[?25lt[24;65H4[1;4H[?12l[?25h[?25l[24;65H5[1;5H[?12l[?25h[?25l-[24;65H6[1;6H[?12l[?25h[?25l[35m-d[m[24;65H7[1;7H[?12l[?25h[?25l,[24;65H8[1;8H[?12l[?25h[?25l[24;65H9[1;9H[?12l[?25h[?25lf[24;65H10[1;10H[?12l[?25h[?25l[1;9H[K[24;65H9 [1;9H[?12l[?25h[?25l-[24;65H10[1;10H[?12l[?25h[?25l[35m-f[m[24;66H1[1;11H[?12l[?25h[?25l,[24;66H2[1;12H[?12l[?25h[?25l[1;11H[K[24;66H1[1;11H[?12l[?25h[?25l[35m1[m[24;66H2[1;12H[?12l[?25h[?25l,[24;66H3[1;13H[?12l[?25h[?25l[31m4[m[24;66H4[1;14H[?12l[?25h[?25l,[31m5[m[24;66H6[1;16H[?12l[?25h[?25l[24;66H7[1;17H[?12l[?25h[?25l-[24;66H8[1;18H[?12l[?25h[?25l[35m--[m[24;66H9[1;19H[?12l[?25h[?25l[35mC[m[24;65H20[1;20H[?12l[?25h[?25l[35mO[m[24;66H1[1;21H[?12l[?25h[?25l[35mM[m[24;66H2[1;22H[?12l[?25h[?25l[1;21H[K[24;66H1[1;21H[?12l[?25h[?25l[1;20H[K[24;66H0[1;20H[?12l[?25h[?25l[1;19H[K[24;65H19[1;19H[?12l[?25h[?25l[35mc[m[24;65H20[1;20H[?12l[?25h[?25l[35mo[m[24;66H1[1;21H[?12l[?25h[?25l[35mm[m[24;66H2[1;22H[?12l[?25h[?25l[35mp[m[24;66H3[1;23H[?12l[?25h[?25l[35ml[m[24;66H4[1;24H[?12l[?25h[?25l[35me[m[24;66H5[1;25H[?12l[?25h[?25l[35mm[m[24;66H6[1;26H[?12l[?25h[?25l[35me[m[24;66H7[1;27H[?12l[?25h[?25l[35mn[m[24;66H8[1;28H[?12l[?25h[?25l[35mt[m[24;66H9[1;29H[?12l[?25h[?25l[24;65H30[1;30H[?12l[?25h[?25ls[24;66H1[1;31H[?12l[?25h[?25lo[24;66H2[1;32H[?12l[?25h[?25ln[24;66H3[1;33H[?12l[?25h[?25lg[24;66H4[1;34H[?12l[?25h[?25ls[24;66H5[1;35H[?12l[?25h[?25l.[24;66H6[1;36H[?12l[?25h[?25lc[24;66H7[1;37H[?12l[?25h[?25ls[24;66H8[1;38H[?12l[?25h[?25lv[24;66H9[1;39H[?12l[?25h[?25l[2;1H[K[24;63H2,1 [2;1H[?12l[?25h[?25l[1m[34m~                                                                               [m[24;63H1,39[1;39H[?12l[?25h[?25l[24;65H40[1;40H[?12l[?25h[?25l[33m>[m[24;66H1[1;41H[?12l[?25h[?25l[24;66H2[1;42H[?12l[?25h[?25ls[24;66H3[1;43H[?12l[?25h[?25lo[24;66H4[1;44H[?12l[?25h[?25ln[24;66H5[1;45H[?12l[?25h[?25lg[24;66H6[1;46H[?12l[?25h[?25ls[24;66H7[1;47H[?12l[?25h[?25lR[24;66H8[1;48H[?12l[?25h[?25le[24;66H9[1;49H[?12l[?25h[?25lp[24;65H50[1;50H[?12l[?25h[?25lo[24;66H1[1;51H[?12l[?25h[?25lr[24;66H2[1;52H[?12l[?25h[?25lt[24;66H3[1;53H[?12l[?25h[?25lT[24;66H4[1;54H[?12l[?25h[?25lr[24;66H5[1;55H[?12l[?25h[?25li[24;66H6[1;56H[?12l[?25h[?25lm[24;66H7[1;57H[?12l[?25h[?25l[1;56H[K[24;66H6[1;56H[?12l[?25h[?25l[1;55H[K[24;66H5[1;55H[?12l[?25h[?25li[24;66H6[1;56H[?12l[?25h[?25lm[24;66H7[1;57H[?12l[?25h[?25lm[24;66H8[1;58H[?12l[?25h[?25le[24;66H9[1;59H[?12l[?25h[?25ld[24;65H60[1;60H[?12l[?25h[?25l.[24;66H1[1;61H[?12l[?25h[?25lc[24;66H2[1;62H[?12l[?25h[?25ls[24;66H3[1;63H[?12l[?25h[?25lv[24;66H4[1;64H[?12l[?25h[?25l[2;1H[K[24;63H2,1 [2;1H[?12l[?25h[?25lh[24;65H2[2;2H[?12l[?25h[?25le[24;65H3[2;3H[?12l[?25h[?25la[24;65H4[2;4H[?12l[?25h[?25ld[24;65H5[2;5H[?12l[?25h[?25l[24;65H6[2;6H[?12l[?25h[?25l-[24;65H7[2;7H[?12l[?25h[?25l[35m-n[m[24;65H8[2;8H[?12l[?25h[?25l[24;65H9[2;9H[?12l[?25h[?25l[31m2[m[24;65H10[2;10H[?12l[?25h[?25l[31m0[m[24;66H1[2;11H[?12l[?25h[?25l[24;66H2[2;12H[?12l[?25h[?25ls[24;66H3[2;13H[?12l[?25h[?25longs[24;66H7[2;17H[?12l[?25h[?25lR[24;66H8[2;18H[?12l[?25h[?25le[24;66H9[2;19H[?12l[?25h[?25lp[24;65H20[2;20H[?12l[?25h[?25lo[24;66H1[2;21H[?12l[?25h[?25lr[24;66H2[2;22H[?12l[?25h[?25lt[24;66H3[2;23H[?12l[?25h[?25lT[24;66H4[2;24H[?12l[?25h[?25lr[24;66H5[2;25H[?12l[?25h[?25li[24;66H6[2;26H[?12l[?25h[?25lm[24;66H7[2;27H[?12l[?25h[?25lm[24;66H8[2;28H[?12l[?25h[?25le[24;66H9[2;29H[?12l[?25h[?25ld[24;65H30[2;30H[?12l[?25h[?25l.[24;66H1[2;31H[?12l[?25h[?25lc[24;66H2[2;32H[?12l[?25h[?25ls[24;66H3[2;33H[?12l[?25h[?25lv[24;66H4[2;34H[?12l[?25h[?25l[24;66H5[2;35H[?12l[?25h[?25l[33m>[m[24;66H6[2;36H[?12l[?25h[?25l[24;66H7[2;37H[?12l[?25h[?25lt[24;66H8[2;38H[?12l[?25h[?25lo[24;66H9[2;39H[?12l[?25h[?25lp[24;65H40[2;40H[?12l[?25h[?25l2[24;66H1[2;41H[?12l[?25h[?25l0[24;66H2[2;42H[?12l[?25h[?25ls[24;66H3[2;43H[?12l[?25h[?25lo[24;66H4[2;44H[?12l[?25h[?25ln[24;66H5[2;45H[?12l[?25h[?25lg[24;66H6[2;46H[?12l[?25h[?25ls[24;66H7[2;47H[?12l[?25h[?25l1[24;66H8[2;48H[?12l[?25h[?25l.[24;66H9[2;49H[?12l[?25h[?25lc[24;65H50[2;50H[?12l[?25h[?25ls[24;66H1[2;51H[?12l[?25h[?25lv[24;66H2[2;52H[?12l[?25h[?25l[3;1H[K[24;63H3,1 [3;1H[?12l[?25h[?25l[33mr[m[24;65H2[3;2H[?12l[?25h[?25l[33mm[m[24;65H3[3;3H[?12l[?25h[?25l[24;65H4[3;4H[?12l[?25h[?25ls[24;65H5[3;5H[?12l[?25h[?25lo[24;65H6[3;6H[?12l[?25h[?25ln[24;65H7[3;7H[?12l[?25h[?25lg[24;65H8[3;8H[?12l[?25h[?25ls[24;65H9[3;9H[?12l[?25h[?25lr[24;65H10[3;10H[?12l[?25h[?25le[24;66H1[3;11H[?12l[?25h[?25lp[24;66H2[3;12H[?12l[?25h[?25lo[24;66H3[3;13H[?12l[?25h[?25lr[24;66H4[3;14H[?12l[?25h[?25l[3;13H[K[24;66H3[3;13H[?12l[?25h[?25l[3;12H[K[24;66H2[3;12H[?12l[?25h[?25l[3;11H[K[24;66H1[3;11H[?12l[?25h[?25l[3;10H[K[24;66H0[3;10H[?12l[?25h[?25l[3;9H[K[24;65H9 [3;9H[?12l[?25h[?25lRe[24;65H11[3;11H[?12l[?25h[?25lp[24;66H2[3;12H[?12l[?25h[?25lo[24;66H3[3;13H[?12l[?25h[?25lr[24;66H4[3;14H[?12l[?25h[?25lt[24;66H5[3;15H[?12l[?25h[?25lT[24;66H6[3;16H[?12l[?25h[?25lr[24;66H7[3;17H[?12l[?25h[?25li[24;66H8[3;18H[?12l[?25h[?25lm[24;66H9[3;19H[?12l[?25h[?25lm[24;65H20[3;20H[?12l[?25h[?25le[24;66H1[3;21H[?12l[?25h[?25ld[24;66H2[3;22H[?12l[?25h[?25l.[24;66H3[3;23H[?12l[?25h[?25lc[24;66H4[3;24H[?12l[?25h[?25ls[24;66H5[3;25H[?12l[?25h[?25lv[24;66H6[3;26H[?12l[?25h[?25l[4;1H[K[24;63H4,1 [4;1H[?12l[?25h[?25lh[24;65H2[4;2H[?12l[?25h[?25le[24;65H3[4;3H[?12l[?25h[?25la[24;65H4[4;4H[?12l[?25h[?25ld[24;65H6[4;6H[?12l[?25h[?25l[31m0[m[24;65H7[4;7H[?12l[?25h[?25l[4;6H[K[24;65H6[4;6H[?12l[?25h[?25l-[24;65H7[4;7H[?12l[?25h[?25l[35m-n[m[24;65H8[4;8H[?12l[?25h[?25l[24;65H9[4;9H[?12l[?25h[?25l[31m2[m[24;65H10[4;10H[?12l[?25h[?25l[31m0[m[24;66H1[4;11H[?12l[?25h[?25l[24;66H2[4;12H[?12l[?25h[?25ls[24;66H3[4;13H[?12l[?25h[?25l[4;12H[K[24;66H2[4;12H[?12l[?25h[?25lt[24;66H3[4;13H[?12l[?25h[?25lo[24;66H4[4;14H[?12l[?25h[?25lp[24;66H5[4;15H[?12l[?25h[?25l2[24;66H6[4;16H[?12l[?25h[?25l0[24;66H7[4;17H[?12l[?25h[?25ls[24;66H8[4;18H[?12l[?25h[?25lo[24;66H9[4;19H[?12l[?25h[?25ln[24;65H20[4;20H[?12l[?25h[?25lg[24;66H1[4;21H[?12l[?25h[?25ls[24;66H2[4;22H[?12l[?25h[?25l1[24;66H3[4;23H[?12l[?25h[?25l.[24;66H4[4;24H[?12l[?25h[?25lc[24;66H5[4;25H[?12l[?25h[?25ls[24;66H6[4;26H[?12l[?25h[?25lv[24;66H7[4;27H[?12l[?25h[?25l[5;1H[K[24;63H5,1 [5;1H[?12l[?25h[?25l[1m[34m~                                                                               [m[24;63H4,27[4;27H[?12l[?25h[24;1H[K[4;26H[?25l[24;63H4,26[10CAll[4;26H[?12l[?25h[?25l[24;1H[1mrecording[m[24;63H[K[24;63H4,26[10CAll[4;26H[?12l[?25h[?25l[24;1H[1m--c INSERT[m [1m --recording[m[24;63H[K[24;63H4,26[10CAll[4;26H[?12l[?25h[?25liv[24;66H7[4;27H[?12l[?25h[?25lv[4;27H[K[24;66H6[4;26H[?12l[?25h[?25l[24;66H7[4;27H[?12l[?25h[24;1H[1mrecording [m[24;10H[K[4;26H[?25l[24;63H4,26[10CAll[4;26H[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"scriptForTop20song.sh" [New] 4L, 169C written
+[?1l>[?12l[?25h[?1049l]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mMyCalendars[0m   [01;34mpublic_html[0m            songs.csv        top20songs.csv
+log      [01;32mmyscript.exe[0m  scriptForTop20song.sh  songsReport.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ chmod =[K+x scriptFort[KTop20song.sh
+]0;delamran@sol28:~[delamran@sol28 ~]$ ./scipt[K[K[Kriptfor[K[K[KFr[KorTop20song.sh
+The Box,Roddy Ricch
+Life Is Good (feat. Drake),Future
+Intentions,Justin Bieber
+ROXANNE,Arizona Zervas
+High Fashion (feat. Mustard),Roddy Ricch
+Blinding Lights,The Weeknd
+Godzilla (feat. Juice WRLD),Eminem
+Falling,Trevor Daniel
+Don't Start Now,Dua Lipa
+Circles,Post Malone
+everything i wanted,Billie Eilish
+BOP,DaBaby
+Dance Monkey,Tones and I
+Suicidal,YNW Melly
+Blueberry Faygo,Lil Mosey
+Run,Joji
+Ballin' (with Roddy Ricch),Mustard
+Say So,Doja Cat
+TOES (feat. Lil Baby & Moneybagg Yo),DaBaby
+Bandit (with YoungBoy Never Broke Again),Juice WRLD
+]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mMyCalendars[0m   [01;34mpublic_html[0m            songs.csv        top20songs1.csv
+log      [01;32mmyscript.exe[0m  [01;32mscriptForTop20song.sh[0m  songsReport.csv  top20songs.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mMyCalendars[0m   [01;34mpublic_html[0m            songs.csv        top20songs1.csv
+log      [01;32mmyscript.exe[0m  [01;32mscriptForTop20song.sh[0m  songsReport.csv  top20songs.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mMyCalendars[0m   [01;34mpublic_html[0m            songs.csv        top20songs1.csv
+log      [01;32mmyscript.exe[0m  [01;32mscriptForTop20song.sh[0m  songsReport.csv  top20songs.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ -convert version[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kconvert -version
+Version: ImageMagick 6.9.10-68 Q16 x86_64 2020-04-01 https://imagemagick.org
+Copyright: © 1999-2019 ImageMagick Studio LLC
+License: https://imagemagick.org/script/license.php
+Features: Cipher DPC Modules OpenMP(3.1) 
+Delegates (built-in): bzlib cairo fontconfig freetype gslib jng jpeg lcms ltdl lzma openexr pangocairo png ps rsvg tiff wmf x xml zlib
+]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m  [01;34mMyCalendars[0m   [01;34mpublic_html[0m            songs.csv        top20songs1.csv
+log      [01;32mmyscript.exe[0m  [01;32mscriptForTop20song.sh[0m  songsReport.csv  top20songs.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ mk [Kdir imageFolder
+]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m      [01;34mMyCalendars[0m   [01;32mscriptForTop20song.sh[0m  top20songs1.csv
+[01;34mimageFolder[0m  [01;32mmyscript.exe[0m  songs.csv              top20songs.csv
+log          [01;34mpublic_html[0m   songsReport.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ ls
+[0m[01;34mexample[0m      [01;34mMyCalendars[0m   [01;32mscriptForTop20song.sh[0m  top20songs1.csv
+[01;34mimageFolder[0m  [01;32mmyscript.exe[0m  songs.csv              top20songs.csv
+log          [01;34mpublic_html[0m   songsReport.csv
+]0;delamran@sol28:~[delamran@sol28 ~]$ cd imageFolder
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ get https://github.com/DanielElamrani/imagesForGif .git
+bash: get: command not found...
+Similar commands are::
+'git'
+'GET'
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ wget https://github.com/DanielElamrani/imagesForGi f.git
+--2020-09-23 15:45:52--  https://github.com/DanielElamrani/imagesForGif.git
+Resolving github.com (github.com)... 140.82.113.3
+Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://github.com/DanielElamrani/imagesForGif [following]
+--2020-09-23 15:45:57--  https://github.com/DanielElamrani/imagesForGif
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘imagesForGif.git’
+
+    [<=>                                    ] 0           --.-K/s                  [ <=>                                   ] 108,666     --.-K/s   in 0.03s   
+
+2020-09-23 15:45:58 (3.36 MB/s) - ‘imagesForGif.git’ saved [108666]
+
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+imagesForGif.git
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ rm imagesForGif.git
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ git clone https://github.com/DanielElamrani/images ForGif.git
+Cloning into 'imagesForGif'...
+remote: Enumerating objects: 9, done.[K
+remote: Counting objects:  11% (1/9)[Kremote: Counting objects:  22% (2/9)[Kremote: Counting objects:  33% (3/9)[Kremote: Counting objects:  44% (4/9)[Kremote: Counting objects:  55% (5/9)[Kremote: Counting objects:  66% (6/9)[Kremote: Counting objects:  77% (7/9)[Kremote: Counting objects:  88% (8/9)[Kremote: Counting objects: 100% (9/9)[Kremote: Counting objects: 100% (9/9), done.[K
+remote: Compressing objects:  11% (1/9)[Kremote: Compressing objects:  22% (2/9)[Kremote: Compressing objects:  33% (3/9)[Kremote: Compressing objects:  44% (4/9)[Kremote: Compressing objects:  55% (5/9)[Kremote: Compressing objects:  66% (6/9)[Kremote: Compressing objects:  77% (7/9)[Kremote: Compressing objects:  88% (8/9)[Kremote: Compressing objects: 100% (9/9)[Kremote: Compressing objects: 100% (9/9), done.[K
+remote: Total 9 (delta 2), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  11% (1/9)   Unpacking objects:  22% (2/9)   Unpacking objects:  33% (3/9)   Unpacking objects:  44% (4/9)   Unpacking objects:  55% (5/9)   Unpacking objects:  66% (6/9)   Unpacking objects:  77% (7/9)   Unpacking objects:  88% (8/9)   Unpacking objects: 100% (9/9)   Unpacking objects: 100% (9/9), done.
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+[0m[01;34mimagesForGif[0m
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ cd imagesForGif
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ convert -delay 2 -loop 0 *.png -scalels
+convert: delegate failed `'dwebp' -pam '%i' -o '%o'' @ error/delegate.c/InvokeDelegate/1928.
+convert: unable to open file `/tmp/magick-4756Vn3GhYU1TIyU': No such file or directory @ error/constitute.c/ReadImage/604.
+convert: missing an image filename `-scalels' @ error/convert.c/ConvertImageCommand/3237.
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ convert -da[Kelay 2 -loop 0 *.png -scale 256 x[K[Kx256 myG if.gif
+convert: delegate failed `'dwebp' -pam '%i' -o '%o'' @ error/delegate.c/InvokeDelegate/1928.
+convert: unable to open file `/tmp/magick-4845tTYRdXFAGQlG': No such file or directory @ error/constitute.c/ReadImage/604.
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ [K[delamran@sol28 imagesForGif]$ man convert
+[?1049h[?1h=convert(1)                     General Commands Manual                     convert(1)[m
+[m
+[1mNAME[0m[m
+       convert  -  convert  between  image  formats as well as resize an image, blur,[m
+       crop, despeckle, dither, draw on, flip, join, re-sample, and much more.[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mconvert[0m [[4minput-option[24m] [4minput-file[24m [[4moutput-option[24m] [4moutput-file[24m[m
+[m
+[1mOVERVIEW[0m[m
+       The [1mconvert[0m program is a member of the ImageMagick(1) suite of tools.  Use  it[m
+       to  convert  between  image  formats  as  well as resize an image, blur, crop,[m
+       despeckle, dither, draw on, flip, join, re-sample, and much more.[m
+[m
+       For more  information  about  the  convert  command,  point  your  browser  to[m
+       file:///usr/share/doc/ImageMagick-6/www/convert.html    or    http://imagemag‐[m
+       ick.org/script/convert.php.[m
+[m
+[1mDESCRIPTION[0m[m
+       Image Settings:[m
+         -adjoin              join images into a single multi-image file[m
+         -affine matrix       affine transform matrix[m
+         -alpha option        activate, deactivate, reset, or set the alpha channel[m
+[7m Manual page convert(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;35mmyGif.gif[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ convert - [Kversion
+Version: ImageMagick 6.9.10-68 Q16 x86_64 2020-04-01 https://imagemagick.org
+Copyright: © 1999-2019 ImageMagick Studio LLC
+License: https://imagemagick.org/script/license.php
+Features: Cipher DPC Modules OpenMP(3.1) 
+Delegates (built-in): bzlib cairo fontconfig freetype gslib jng jpeg lcms ltdl lzma openexr pangocairo png ps rsvg tiff wmf x xml zlib
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ convert: delegate failed `'dwebp' -pam '%i' -o '%o'' @ er ror/delegate.c/InvokeDe        legate/1928.convert: delegate failed `'dwebp' -pam '%i' - o '%o'' @ error/delegate.c/InvokeDe        legate/1928.
+> ls[K[K^C
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;35mmyGif.gif[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ convert [K[K[K[K[K[K[K[Kgit .add[K[K[K[K[K add .
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git - [K[Kcommit -m "adding gif to reps[Ko"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'delamran@sol28.(none)')
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ danielelamrani@gmail.com[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit cong[Kfig --gloab[K[Kbal user.email "danielelamrani@gmail.com" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K"
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git congif -- [Kglobal user.name " [KDaniel El;a[K[Kamrani"
+git: 'congif' is not a git command. See 'git --help'.
+
+Did you mean this?
+	config
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git congif --global user.name "Daniel Elamrani"
+git: 'congif' is not a git command. See 'git --help'.
+
+Did you mean this?
+	config
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git congif --global user.name "Daniel Elamrani"[C[C[1P[1P[1P[1@f[1@i[1@g
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git push ori[Kigin [K[K[K[K[K[K[K[K[K[K[K[Kstatus
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   myGif.gif
+#
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git push origin master
+Username for 'https://github.com': danielelamrani   ani@gmail.com
+Password for 'https://danielelamrani@gmail.com@github.com': 
+Everything up-to-date
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git[K[K[Kgit status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   myGif.gif
+#
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git push pr[K[Korigin master
+Username for 'https://github.com': man git congif   fig
+Password for 'https://man git config@github.com': 
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ man git congif[K[K[Kfig
+[?1049h[?1h=GIT-CONFIG(1)                         Git Manual                        GIT-CONFIG(1)[m
+[m
+[1mNAME[0m[m
+       git-config - Get and set repository or global options[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [type] [-z|--null] name [value [value_regex]][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [type] --add name value[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [type] --replace-all name value [value_regex][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [type] [-z|--null] --get name [value_regex][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [type] [-z|--null] --get-all name [value_regex][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [type] [-z|--null] --get-regexp name_regex [value_rege[m x][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --unset name [value_regex][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --unset-all name [value_regex][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --rename-section old_name new_name[m
+       [4mgit[24m [4mconfig[24m [<file-option>] --remove-section name[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [-z|--null] -l | --list[m
+       [4mgit[24m [4mconfig[24m [<file-option>] --get-color name [default][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --get-colorbool name [stdout-is-tty][m
+       [4mgit[24m [4mconfig[24m [<file-option>] -e | --edit[m
+[m
+[1mDESCRIPTION[0m[m
+[7m Manual page git-config(1) line 1 (press h for help or q to quit)[27m[K[K       You can query/set/replace/unset options with this command. The name is[m
+       actually the section and the key separated by a dot, and the value will be[m
+       escaped.[m
+[m
+       Multiple lines can be added to an option by using the [4m--add[24m option. If you[m
+       want to update or unset an option which can occur on multiple lines, a POSIX[m
+       regexp value_regex needs to be given. Only the existing values that match the[m
+       regexp are updated or unset. If you want to handle the lines that do [1mnot[0m match[m
+       the regex, just prepend a single exclamation mark in front (see also the[m
+       section called “EXAMPLES”).[m
+[m
+       The type specifier can be either [4m--int[24m or [4m--bool[24m, to make [4mgit[24m [4mconfig[24m ensure[m
+       that the variable(s) are of the given type and convert the value to the[m
+       canonical form (simple decimal number for int, a "true" or "false" string for[m
+       bool), or [4m--path[24m, which does some path expansion (see [4m--path[24m below). If no[m
+       type specifier is passed, no checks or transformations are performed on the[m
+       value.[m
+[m
+       When reading, the values are read from the system, global and repository local[m
+       configuration files by default, and options [4m--system[24m, [4m--global[24m, [4m--local[24m and[m
+       [4m--file[24m [4m<filename>[24m can be used to tell the command to read from only that[m
+       location (see the section called “FILES”).[m
+[m
+[7m Manual page git-config(1) line 26 (press h for help or q to quit)[27m[K[K       When writing, the new value is written to the repository local configuration[m
+       file by default, and options [4m--system[24m, [4m--global[24m, [4m--file[24m [4m<filename>[24m can be used[m
+       to tell the command to write to that location (you can say [4m--local[24m but that is[m
+       the default).[m
+[m
+       This command will fail with non-zero status upon error. Some exit codes are:[m
+[m
+        1. The config file is invalid (ret=3),[m
+[m
+        2. can not write to the config file (ret=4),[m
+[m
+        3. no section or name was provided (ret=2),[m
+[m
+        4. the section or key is invalid (ret=1),[m
+[m
+        5. you try to unset an option which does not exist (ret=5),[m
+[m
+        6. you try to unset/set an option for which multiple lines match (ret=5), or[m
+[m
+        7. you try to use an invalid regexp (ret=6).[m
+[m
+       On success, the command returns the exit code 0.[m
+[m
+[7m Manual page git-config(1) line 49 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git remote [K set-url origin[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit remote show origin
+* remote origin
+  Fetch URL: https://github.com/DanielElamrani/imagesForGif.git
+  Push  URL: https://github.com/DanielElamrani/imagesForGif.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git push pr[K[Korigina[K master
+Username for 'https://github.com': danielelamrani@gmail.com
+Password for 'https://danielelamrani@gmail.com@github.com': 
+Everything up-to-date
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   myGif.gif
+#
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git commit - [Km [K "adding gif"
+[master a5c688e] adding gif
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 myGif.gif
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git push origina[K master
+Username for 'https://github.com': danielelamrani@gmail.com
+Password for 'https://danielelamrani@gmail.com@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 5.55 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/DanielElamrani/imagesForGif.git
+   4c21f63..a5c688e  master -> master
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git push origin mastercommit -m "adding gif"status[Kpush origin masterremote show origin[8Pman git configgit push origin master[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kconvert -delay 500 [K[K[K[K800 -loop 0 *.png -csa[K[K[Kscale 256x256 myGif.gif [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krm.gif[K[K[K[K myGid[Kf.gif
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ conv[K[K[K[Kconvert -delay 800 -loop 0 *.png s[K-scale 256x256 myGid[Kf.gif [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kf
+convert: delegate failed `'dwebp' -pam '%i' -o '%o'' @ error/delegate.c/InvokeDelegate/1928.
+convert: unable to open file `/tmp/magick-29459AIjJFpZz1jjr': No such file or directory @ error/constitute.c/ReadImage/604.
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;35mmyGif.gif[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git [K [K add .
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git commit -m "modified gif delay"
+[master 8245e7c] modified gif delay
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git push opr[K[Krigin master
+Username for 'https://github.com': danielelamrani@gmail.com
+Password for 'https://danielelamrani@gmail.com@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 341 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/DanielElamrani/imagesForGif.git
+   a5c688e..8245e7c  master -> master
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ man convert
+[?1049h[?1h=convert(1)                     General Commands Manual                     convert(1)[m
+[m
+[1mNAME[0m[m
+       convert  -  convert  between  image  formats as well as resize an image, blur,[m
+       crop, despeckle, dither, draw on, flip, join, re-sample, and much more.[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mconvert[0m [[4minput-option[24m] [4minput-file[24m [[4moutput-option[24m] [4moutput-file[24m[m
+[m
+[1mOVERVIEW[0m[m
+       The [1mconvert[0m program is a member of the ImageMagick(1) suite of tools.  Use  it[m
+       to  convert  between  image  formats  as  well as resize an image, blur, crop,[m
+       despeckle, dither, draw on, flip, join, re-sample, and much more.[m
+[m
+       For more  information  about  the  convert  command,  point  your  browser  to[m
+       file:///usr/share/doc/ImageMagick-6/www/convert.html    or    http://imagemag‐[m
+       ick.org/script/convert.php.[m
+[m
+[1mDESCRIPTION[0m[m
+       Image Settings:[m
+         -adjoin              join images into a single multi-image file[m
+         -affine matrix       affine transform matrix[m
+         -alpha option        activate, deactivate, reset, or set the alpha channel[m
+[7m Manual page convert(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -antialias           remove pixel-aliasing[m
+[7m Manual page convert(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -authenticate value  decrypt image with this password[m
+[7m Manual page convert(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -attenuate value     lessen (or intensify) when adding noise to an image[m
+[7m Manual page convert(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -background color    background color[m
+[7m Manual page convert(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -bias value          add bias when convolving an image[m
+[7m Manual page convert(1) line 8 (press h for help or q to quit)[27m[K[H[2J[H[m
+[1mSYNOPSIS[0m[m
+       [1mconvert[0m [[4minput-option[24m] [4minput-file[24m [[4moutput-option[24m] [4moutput-file[24m[m
+[m
+[1mOVERVIEW[0m[m
+       The [1mconvert[0m program is a member of the ImageMagick(1) suite of tools.  Use  it[m
+       to  convert  between  image  formats  as  well as resize an image, blur, crop,[m
+       despeckle, dither, draw on, flip, join, re-sample, and much more.[m
+[m
+       For more  information  about  the  convert  command,  point  your  browser  to[m
+       file:///usr/share/doc/ImageMagick-6/www/convert.html    or    http://imagemag‐[m
+       ick.org/script/convert.php.[m
+[m
+[1mDESCRIPTION[0m[m
+       Image Settings:[m
+         -adjoin              join images into a single multi-image file[m
+         -affine matrix       affine transform matrix[m
+         -alpha option        activate, deactivate, reset, or set the alpha channel[m
+         -antialias           remove pixel-aliasing[m
+         -authenticate value  decrypt image with this password[m
+         -attenuate value     lessen (or intensify) when adding noise to an image[m
+         -background color    background color[m
+         -bias value          add bias when convolving an image[m
+         -black-point-compensation[m
+                              use black point compensation[m
+         -blue-primary point  chromaticity blue primary point[m
+         -bordercolor color   border color[m
+         -caption string      assign a caption to an image[m
+         -cdl filename        color correct with a color decision list[m
+         -channel type        apply option to select image channels[m
+         -clip                clip along the first path from the 8BIM profile[m
+         -clip-mask filename  associate a clip mask with the image[m
+         -clip-path id        clip along a named path from the 8BIM profile[m
+         -colors value        preferred number of colors in the image[m
+[7m Manual page convert(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -colorspace type     alternate image colorspace[m
+[7m Manual page convert(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -comment string      annotate image with comment[m
+[7m Manual page convert(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -compose operator    set image composite operator[m
+[7m Manual page convert(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -compress type       type of pixel compression when writing the image[m
+[7m Manual page convert(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -decipher filename   convert cipher pixels to plain pixels[m
+[7m Manual page convert(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -define format:option[m
+[7m Manual page convert(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                              define one or more image format options[m
+[7m Manual page convert(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -delay value         display the next image after pausing[m
+[7m Manual page convert(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -density geometry    horizontal and vertical density of the image[m
+[7m Manual page convert(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -depth value         image depth[m
+[7m Manual page convert(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -direction type      render text right-to-left or left-to-right[m
+[7m Manual page convert(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         -display server      get image or font from this X server[m
+[7m Manual page convert(1) line 20 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;35mmyGif.gif[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ lsman convertgit push origin mastercommit -m "modified gif delay"add .[Kls[Kconvert -delay 800 -loop 0 *.png -scale 256x256 myGif.gif[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Krm myGif.gif
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ rm myGif.gifls[Kman convertgit push origin mastercommit -m "modified gif delay"add .[Kls[Kconvert -delay 800 -loop 0 *.png -scale 256x256 myGif.gif[C[1P[1P[1P[1@5[1@0[1@0[1@0[1P[1P[1P[1P[1@2[1P[1@1[1@5[1P[1@2[1P[1@3[1@0[1@0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@5[C[1@0[1P[1P[1@6[C[1@0[1P[1P[1@5[C[1@0
+convert: delegate failed `'dwebp' -pam '%i' -o '%o'' @ error/delegate.c/InvokeDelegate/1928.
+convert: unable to open file `/tmp/magick-29765HI24PAhso2MD': No such file or directory @ error/constitute.c/ReadImage/604.
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;35mmyGif.gif[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git .[K[K add .
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git commit -m "moddified [K[K[K[K[K[K[Kified gif delay again"
+[master db1b718] modified gif delay again
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git push pr[K[Korigin master
+Username for 'https://github.com': danielelamrani@gmail.com
+Password for 'https://danielelamrani@gmail.com@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 349 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/DanielElamrani/imagesForGif.git
+   8245e7c..db1b718  master -> master
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;35mmyGif.gif[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ lsgit push origin mastercommit -m "modified gif delay again"add .[Kls[Kconvert -delay 1500 -loop 0 *.png -scale 256x256 myGif.gif[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm myGif.gif[K
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ rm myGif.gifls[Kgit push origin mastercommit -m "modified gif delay again"add .[Kls[Kconvert -delay 1500 -loop 0 *.png -scale 256x256 myGif.gif[1P[1P[1P[C[1P[1@4[1@0[1@0[C[1@ [1@-[1@d[1@i[1@p[1P[1@s[1@p[1@o[1@s[1@e[C[1@ [1@P[1@r[1@e[1@v[1@i[1@o[1@u[1@s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@5[1P[1@4
+convert: delegate failed `'dwebp' -pam '%i' -o '%o'' @ error/delegate.c/InvokeDelegate/1928.
+convert: unable to open file `/tmp/magick-304092-ICS_ZtW5uW': No such file or directory @ error/constitute.c/ReadImage/604.
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;35mmyGif.gif[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ lsconvert -dispose Previous -delay 400 -loop 0 *.png -scale 256x256 myGif.gif[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm myGif.gif[Kls[Kgit push origin mastercommit -m "modified gif delay again"add .[K
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git add .ls[Kconvert -dispose Previous -delay 400 -loop 0 *.png -scale 256x256 myGif.gif[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm myGif.gif[Kls[Kgit push origin mastercommit -m "modified gif delay again" "[1P"."." "A"G"A"I"N"[C
+[master 672eae5] modified gif delay again.. AGAIN
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git commit -m "modified gif delay again.. AGAIN"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kls[Kconvert -dispose Previous -delay 400 -loop 0 *.png -scale 256x256 myGif.gif[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm myGif.gif[Kls[Kgit push origin master
+Username for 'https://github.com': danielelamrani@gmial.com^[[D^[[D               ail.com
+Password for 'https://danielelamrani@gmail.com@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 357 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/DanielElamrani/imagesForGif.git
+   db1b718..672eae5  master -> master
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ rm myGif.gif 
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git pull[K[K[K[K[K[K[K[Kcd ..
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+[0m[01;34mimagesForGif[0m
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ rm imagesForGif
+rm: cannot remove ‘imagesForGif’: Is a directory
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ git pull https://github.com/DanielElamrani/imagesForGif.git
+fatal: Not a git repository (or any parent up to mount point /users1)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ ls
+[0m[01;34mimagesForGif[0m
+]0;delamran@sol28:~/imageFolder[delamran@sol28 imageFolder]$ cd imagesfor[K[K[KForGif/
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls -a
+[0m[01;34m.[0m  [01;34m..[0m  [01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;34m.git[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ fit[K[K[Kgit pull https://github.com/DanielElamrani/imagesForGif.git
+remote: Enumerating objects: 7, done.[K
+remote: Counting objects:  14% (1/7)[Kremote: Counting objects:  28% (2/7)[Kremote: Counting objects:  42% (3/7)[Kremote: Counting objects:  57% (4/7)[Kremote: Counting objects:  71% (5/7)[Kremote: Counting objects:  85% (6/7)[Kremote: Counting objects: 100% (7/7)[Kremote: Counting objects: 100% (7/7), done.[K
+remote: Compressing objects:  20% (1/5)[Kremote: Compressing objects:  40% (2/5)[Kremote: Compressing objects:  60% (3/5)[Kremote: Compressing objects:  80% (4/5)[Kremote: Compressing objects: 100% (5/5)[Kremote: Compressing objects: 100% (5/5), done.[K
+remote: Total 5 (delta 2), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  20% (1/5)   Unpacking objects:  40% (2/5)   Unpacking objects:  60% (3/5)   Unpacking objects:  80% (4/5)   Unpacking objects: 100% (5/5)   Unpacking objects: 100% (5/5), done.
+From https://github.com/DanielElamrani/imagesForGif
+ * branch            HEAD       -> FETCH_HEAD
+Updating 672eae5..d674ef6
+Fast-forward
+ 001.png | Bin 680 -> 11097 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls -a
+[0m[01;34m.[0m  [01;34m..[0m  [01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;34m.git[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls -a[Kgit pull https://github.com/DanielElamrani/imagesForGif.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -a[K[Kcd imagesForGif/ls[Kgit pull https://github.com/DanielElamrani/imagesForGif.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm imagesForGif[Kls[Kcd ..rm myGif.gif git push origin mastercommit -m "modified gif delay again.. AGAIN"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kls[Kconvert -dispose Previous -delay 400 -loop 0 *.png -scale 256x256 myGif.gif[C[1P[1P[1P[1@1[1@0[1@0[1P[1P[1P[1@5[1@0[1P[1P[1@7[1@5
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;35mmyGif.gif[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ lsconvert -dispose Previous -delay 75 -loop 0 *.png -scale 256x256 myGif.gif[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -a[K[Kgit pull https://github.com/DanielElamrani/imagesForGif.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -a[K[Kcd imagesForGif/ls[Kgit pull https://github.com/DanielElamrani/imagesForGif.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm imagesForGif[Kls[Kcd ..rm myGif.gif git push origin mastercommit -m "modified gif delay again.. AGAIN"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[K
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git add .ls[Kconvert -dispose Previous -delay 75 -loop 0 *.png -scale 256x256 myGif.gif[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -a[K[Kgit pull https://github.com/DanielElamrani/imagesForGif.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -a[K[Kcd imagesForGif/ls[Kgit pull https://github.com/DanielElamrani/imagesForGif.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm imagesForGif[Kls[Kcd ..rm myGif.gif git push origin mastercommit -m "modified gif delay again.. AGAIN"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kcommit -m "modified gif delay again.. AGAIN"
+[master 9d893de] modified gif delay again.. AGAIN
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ git push origin master
+Username for 'https://github.com': danielelamrani@gmail.com
+Password for 'https://danielelamrani@gmail.com@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 22.23 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/DanielElamrani/imagesForGif.git
+   d674ef6..9d893de  master -> master
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;35mmyGif.gif[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ ls
+[0m[01;35m001.png[0m  [01;35m002.png[0m  [01;35m003.png[0m  [01;35m004.png[0m  [01;35m005.png[0m  [01;35m006.png[0m  [01;35m007.png[0m  [01;35mmyGif.gif[0m
+]0;delamran@sol28:~/imageFolder/imagesForGif[delamran@sol28 imagesForGif]$ l[Kexit
+logout
