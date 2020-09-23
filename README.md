@@ -26,18 +26,17 @@ I of course made the script executable by using the chmod +x command on my scrip
 
 With task 1 and 2 done, I started task 3. 
 
-This was sort of annoying because I decided to make a gif using png images. The gif was going to say "Hi Prof". I unknowingly used a png file that must have been corrupted
-and this caused me to do some intense googling. I eventually found the reason why I was getting an error and I replaced the image. 
+This was sort of annoying because I decided to make a gif using png images adn one of them turned out to be corrupted. The gif was going to say "Hi Prof". As I said, I unknowingly used a png file that must have been corrupted and this caused me to do some intense googling. I eventually found the reason why I was getting an error and I replaced the image. 
 
-For task 3 I had to find png images, put them in a repo, then clone the repo to my linux machine, use image magick to make the gif and then push the changes to my repo so the
+For task 3 I had to find png images, put them in a repo, then clone the repo to my linux machine, use imagemagick to make the gif and then push the changes to my repo so the
 gif would appear in my repo. I ran into a few roadblocks along the way with successfully pushing the gif to my repo but in the end I got it to work. 
 
-The commands for the gif were
+The commands for the gif were:
 
 convert -dispose Previous -delay 75 -loop 0 *.png -scale 256x256
 
-This took all of my png's and made a gif. I originally did not include the dispose command and this led to the gif having all the letters superimposed on top of eachother.
-The delay command also took a bit of working with. I orginally used the value 2 which was way too fast. I read that it was in miliseconds so I tried 400 to make each
+This took all of my PNGs and made a gif. I originally did not include the 'dispose' command and this led to the gif having all the letters superimposed on top of eachother.
+The 'delay' command also took a bit of working with. I orginally used the value 2 which was way too fast. I read that it was in miliseconds so I tried 400 to make each
 image change after .4 seconds. This did not work at all. To be honest I have no clue what the unit is but I enveutally found the value of 75 to work well.
 
 My gif is in this repo.
