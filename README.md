@@ -6,8 +6,8 @@ Hi Professor,
 In this repository you will find my putty session log showing my results for Task 1 and Task 2. For task 1 I uploaded a csv of song artists. You'll find this csv file 
 included in the repository.
 
-My goal was to get a report that showed the top 20 songs from that week. I trimmed the file by taking just the top 20 lines using the 
-head -n "number of lines" input.csv > newFile.csv command. I now had a file of just 20 lines. I wanted to only include the Song name and artist name so I used the 
+My goal was to get a report that showed the top 20 songs from that week with just the song and artist name. I trimmed the file by taking just the top 20 lines using the 
+head -n "number of lines" input.csv > newFile.csv command. I now had a file of just 20 lines. I wanted to only include the song name and artist name so I used the 
 cut -d, f"number values corresponding to columns" --complement newFile.csv > trimmedNewFile.csv command to trim the csv columns and place it in a new file.  
 
 I now had my report. 
