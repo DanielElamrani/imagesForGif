@@ -1,0 +1,31 @@
+
+output for task 1. 
+
+Commands:
+head -- to show first n number of lines
+cut -- to trim the csv columns to just the song name and artist. 
+If necessary we can sort the below output using the sort command: sort -t, -k1 (this sorts alphabetically using ',' as delimiter and column 1 as the column to sort by)
+Though this would defeat the purpose of the report which is to just show the top 20 songs and artists in order. 
+
+
+
+The Box,Roddy Ricch
+Life Is Good (feat. Drake),Future
+Intentions,Justin Bieber
+ROXANNE,Arizona Zervas
+High Fashion (feat. Mustard),Roddy Ricch
+Blinding Lights,The Weeknd,
+Godzilla (feat. Juice WRLD),Eminem
+Falling,Trevor Daniel
+Don't Start Now,Dua Lipa
+Circles,Post Malone
+everything i wanted,Billie Eilish
+BOP,DaBaby
+Dance Monkey,Tones and I
+Suicidal,YNW Melly
+Blueberry Faygo,Lil Mosey
+Run,Joji
+Ballin' (with Roddy Ricch),Mustard
+Say So,Doja Cat
+TOES (feat. Lil Baby & Moneybagg Yo),DaBaby
+Bandit (with YoungBoy Never Broke Again),Juice WRLD
